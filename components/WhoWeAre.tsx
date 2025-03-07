@@ -1,6 +1,9 @@
 import React from "react";
 import SectionHeader from "./shared/SectionHeader";
 import Image from "next/image";
+import { whoWeAre } from "@/constants";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const WhoWeAre = () => {
 	return (
@@ -11,27 +14,36 @@ const WhoWeAre = () => {
 				}
 				title={"Your trusted healthcare partner"}
 				subTitle={"Who we are"}
+				position={"center"}
 			/>
-			<div className="container">
-				<div className="bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-					<div className="flex items-center justify-start gap-4">
-						<Image
-							src={"/assets/icons/hospital.svg"}
-							alt={"Hospital Icon"}
-							width={1000}
-							height={1000}
-							className="w-16 h-1w-16"
-						/>
-						<h4 className="uppercase text-primary font-medium text-base leading-loose">
-							Cost-Effective Healthcare solution
-						</h4>
+			<div className="grid grid-col-1 md:grid-cols-2 container mt-16 gap-8">
+				{whoWeAre.map(({ title, icon, name, description }, index) => (
+					<div
+						key={index}
+						className="bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-8 rounded-2xl"
+					>
+						<div className="flex items-center justify-start gap-4">
+							<Image
+								src={icon}
+								alt={`${name} icon`}
+								width={1000}
+								height={1000}
+								className="w-16 h-1w-16"
+							/>
+							<h4 className="uppercase text-primary font-medium text-base leading-loose">
+								{title}
+							</h4>
+						</div>
+						<p className="text-sm leading-loose text-gray-900 mt-2">
+							{description}
+						</p>
 					</div>
-					<p className="text-sm leading-loose text-gray-900 mt-2">
-						We help hospitals, clinics, and individuals save money
-						by providing doctors, nurses, and medical supplies on
-						demand.
-					</p>
-				</div>
+				))}
+			</div>
+			<div className="flex items-center justify-center container mt-10">
+				<Button size={"lg"} asChild>
+					<Link href="/about">Learn more about us</Link>
+				</Button>
 			</div>
 		</div>
 	);

@@ -1,3 +1,4 @@
+import OurServices from "@/components/OurServices";
 import Showcase from "@/components/Showcase";
 import WhoWeAre from "@/components/WhoWeAre";
 import React from "react";
@@ -7,6 +8,7 @@ const page = () => {
 		<div>
 			<Showcase />
 			<WhoWeAre />
+			<OurServices />
 		</div>
 	);
 };

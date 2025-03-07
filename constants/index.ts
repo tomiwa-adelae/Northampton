@@ -89,12 +89,6 @@ export const homeCarousel = [
 		headline: "Expert Medical Staffing, On Demand",
 		description:
 			"NHFHL provides qualified doctors, nurses, and caregivers for hospitals, clinics, and individuals—whenever you need them.",
-		// cta: [
-		// 	{
-		// 		title: "Contact us now",
-		// 		slug: "/contact",
-		// 	},
-		// ],
 		image: "/assets/images/nurse.png",
 	},
 	{
@@ -108,5 +102,36 @@ export const homeCarousel = [
 			},
 		],
 		image: "/assets/images/nurse.png",
+	},
+];
+
+export const whoWeAre = [
+	{
+		icon: "/assets/icons/hospital.svg",
+		title: "Cost-Effective Healthcare solution",
+		description:
+			"We help hospitals, clinics, and individuals save moneyby providing doctors, nurses, and medical supplies on demand.",
+		name: "Hospital",
+	},
+	{
+		icon: "/assets/icons/medicine.svg",
+		title: "Reliable Pharmaceutical Supply",
+		description:
+			"We provide high-quality medications to healthcare providers.",
+		name: "Medicines",
+	},
+	{
+		icon: "/assets/icons/doctor.svg",
+		title: "Licensed & Experienced Professionals",
+		description:
+			"Our team consists of certified doctors and nurses ready to serve.",
+		name: "Hospital",
+	},
+	{
+		icon: "/assets/icons/hand-to-hand.svg",
+		title: "Trusted by Many",
+		description:
+			"We have built strong partnerships with hospitals, clinics, and organizations nationwide.",
+		name: "Trust",
 	},
 ];

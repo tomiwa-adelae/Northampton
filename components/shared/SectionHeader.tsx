@@ -4,13 +4,15 @@ const SectionHeader = ({
 	title,
 	subTitle,
 	description,
+	position = "left",
 }: {
 	title: string;
 	subTitle: string;
 	description: string | React.ReactNode;
+	position: string;
 }) => {
 	return (
-		<div className="container text-center">
+		<div className={`container ${position === "center" && "text-center"}`}>
 			<h4 className="uppercase text-sm lg:text-base font-medium">
 				{subTitle}
 			</h4>
