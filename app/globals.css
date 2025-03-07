@@ -32,7 +32,7 @@
 		--popover-foreground: 222.2 84% 4.9%;
 		--primary: 205 100% 40%;
 		--primary-foreground: 210 40% 98%;
-		--secondary: 210 40% 96.1%;
+		--secondary: 32 100% 48%;
 		--secondary-foreground: 222.2 47.4% 11.2%;
 		--muted: 210 40% 96.1%;
 		--muted-foreground: 215.4 16.3% 46.9%;
@@ -60,7 +60,7 @@
 		--popover-foreground: 210 40% 98%;
 		--primary: 205 100% 40%;
 		--primary-foreground: 222.2 47.4% 11.2%;
-		--secondary: 217.2 32.6% 17.5%;
+		--secondary: 32 100% 48%;
 		--secondary-foreground: 210 40% 98%;
 		--muted: 217.2 32.6% 17.5%;
 		--muted-foreground: 215 20.2% 65.1%;
@@ -91,17 +91,6 @@
 .swiper {
 	width: 100%;
 	height: 100%;
-}
-
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-
-	/* Center slide text vertically */
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .swiper-slide img {

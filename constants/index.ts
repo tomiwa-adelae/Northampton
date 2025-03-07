@@ -31,3 +31,82 @@ export const navLinks = [
 		title: "Contact us",
 	},
 ];
+
+export const homeCarousel = [
+	{
+		headline: "Bringing Healthcare Closer – Doctors, Medications & More",
+		description:
+			"We provide licensed doctors, nurses, and pharmaceuticals at lower costs, helping hospitals, clinics, and individuals access quality healthcare without expensive retainership fees.",
+		cta: [
+			{
+				title: "Explore our services",
+				slug: "/services",
+			},
+			{
+				title: "Call us now",
+				slug: `https://wa.me/${whatsappNumber}`,
+			},
+		],
+		image: "/assets/images/nurse.png",
+	},
+	{
+		headline: "Your Reliable Partner for Medications & Medical Supplies",
+		description:
+			"With our nationwide pharmacy network, you can access high-quality, affordable medications delivered to your home or hospital.",
+		cta: [
+			{
+				title: "Read more",
+				slug: "/about",
+			},
+		],
+		image: "/assets/images/nurse.png",
+	},
+	{
+		headline: "Bringing Quality Healthcare to Your Doorstep",
+		description:
+			"From expert medical staffing to seamless pharmacy deliveries—NHFHL ensures you receive top-tier healthcare without the hassle.",
+		cta: [
+			{
+				title: "Explore our Services",
+				slug: "/services",
+			},
+		],
+		image: "/assets/images/nurse.png",
+	},
+	{
+		headline: "Healthcare Solutions for Businesses & HMOs",
+		description:
+			"Reduce costs and improve healthcare access for your employees or enrollees with NHFHL’s seamless corporate and HMO partnerships.",
+		cta: [
+			{
+				title: "Contact us now",
+				slug: "/contact",
+			},
+		],
+		image: "/assets/images/nurse.png",
+	},
+	{
+		headline: "Expert Medical Staffing, On Demand",
+		description:
+			"NHFHL provides qualified doctors, nurses, and caregivers for hospitals, clinics, and individuals—whenever you need them.",
+		// cta: [
+		// 	{
+		// 		title: "Contact us now",
+		// 		slug: "/contact",
+		// 	},
+		// ],
+		image: "/assets/images/nurse.png",
+	},
+	{
+		headline: "We Make Healthcare Easy & Stress-Free",
+		description:
+			"Whether you need a prescription refill, medical staff, or corporate healthcare solutions—NHFHL is your trusted partner for accessible healthcare.",
+		cta: [
+			{
+				title: "Get started today",
+				slug: "/contact",
+			},
+		],
+		image: "/assets/images/nurse.png",
+	},
+];

@@ -18,6 +18,7 @@ const Header = () => {
 		<header>
 			<div className="flex items-center justify-end gap-8 container py-4 text-xs md:text-sm font-medium">
 				<a
+					target="_blank"
 					href={`mailto:${email}`}
 					className="flex items-center justify-center gap-2"
 				>
@@ -32,7 +33,8 @@ const Header = () => {
 				</a>
 
 				<a
-					href={`tel:${whatsappNumber}`}
+					target="_blank"
+					href={`https://wa.me/${whatsappNumber}`}
 					className="flex items-center justify-center gap-2"
 				>
 					<Image
