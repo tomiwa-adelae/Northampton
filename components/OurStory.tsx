@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import { Spotlight } from "./ui/spotlight-new";
 
 const OurStory = () => {
 	return (
-		<div className="container pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<div className="lg:col-span-2">
+		<div className="container pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative overflow-hidden">
+			<Spotlight />
+			<div className="lg:col-span-3">
 				<h2
 					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
 				>
@@ -20,7 +22,7 @@ const OurStory = () => {
 					institutions.
 				</p>
 			</div>
-			<div className="flex items-center justify-center">
+			<div className="lg:col-span-2 flex items-center justify-center">
 				<Image
 					src={"/assets/icons/medicine.svg"}
 					alt={"Medicine Icon"}

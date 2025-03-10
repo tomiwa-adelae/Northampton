@@ -1,13 +1,13 @@
-import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<div className="bg-blue-900 py-8 text-center text-white font-medium uppercase text-xs lg:text-sm">
+		<div className="bg-blue-900 py-8 text-center text-white font-medium uppercase text-xs">
 			<div className="container">
-				<p>
+				<Link href="/" className="hover:text-secondary transition-all">
 					&copy; {year} Northhampton Healthcare. All rights reserved
-				</p>
+				</Link>
 			</div>
 		</div>
 	);
