@@ -1,3 +1,4 @@
+import ContactDetails from "@/components/ContactDetails";
 import { ContactForm } from "@/components/forms/ContactForm";
 import Contact from "@/components/shared/Contact";
 import Showcase from "@/components/shared/Showcase";
@@ -23,6 +24,7 @@ const page = () => {
 				]}
 				image="/assets/images/contact-man.png"
 			/>
+			<ContactDetails />
 			<ContactForm />
 			<LeafletMap />
 			<Contact

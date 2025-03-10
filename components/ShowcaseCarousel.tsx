@@ -33,7 +33,7 @@ const ShowcaseCarousel = () => {
 								} gap-10 container`}
 							>
 								<div className="flex flex-col items-start justify-center mt-20">
-									<h1 className="text-3xl md:text-4xl md:leading-loose leading-loose font-bold">
+									<h1 className="text-3xl md:text-4xl md:leading-loose leading-loose font-bold uppercase">
 										{headline}
 									</h1>
 									<p className="text-sm md:text-base md:leading-loose leading-loose text-gray-100 my-6">

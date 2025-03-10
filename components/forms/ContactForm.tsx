@@ -27,6 +27,7 @@ import {
 } from "../ui/select";
 import { subjects } from "@/constants";
 import { useState } from "react";
+import { Spotlight } from "../ui/spotlight-new";
 
 const FormSchema = z.object({
 	name: z
@@ -62,7 +63,8 @@ export function ContactForm() {
 	async function onSubmit(data: z.infer<typeof FormSchema>) {}
 
 	return (
-		<div className="bg-white py-16">
+		<div className="bg-white py-16 relative overflow-hidden">
+			<Spotlight />
 			<div className="container">
 				<h2
 					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose md:leading-loose lg:leading-normal  font-semibold mb-2 text-center text-primary`}

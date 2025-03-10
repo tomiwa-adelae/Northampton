@@ -4,6 +4,7 @@ import OurStory from "@/components/OurStory";
 import OurVision from "@/components/OurVision";
 import Contact from "@/components/shared/Contact";
 import Showcase from "@/components/shared/Showcase";
+import { Spotlight } from "@/components/ui/spotlight-new";
 
 const page = () => {
 	return (
@@ -13,10 +14,16 @@ const page = () => {
 				description="We are a trusted healthcare provider offering innovative solutions that make quality medical care accessible and affordable. Our mission is to bridge the gap in healthcare delivery by providing top-notch medical staffing, pharmaceutical supplies, and healthcare referrals—ensuring that individuals, families, and businesses receive the best care possible."
 				bgImage="/assets/images/about-showcase-bg-img.jpg"
 			/>
-			<OurStory />
-			<OurMission />
-			<OurVision />
-			<CoreValues />
+			<div className="relative overflow-hidden">
+				<Spotlight />
+				<OurStory />
+				<OurMission />
+			</div>
+			<div className="relative overflow-hidden">
+				<Spotlight />
+				<OurVision />
+				<CoreValues />
+			</div>
 			<Contact
 				title={"Join Us in Transforming Healthcare"}
 				description={
