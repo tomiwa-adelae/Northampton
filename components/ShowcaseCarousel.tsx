@@ -4,16 +4,16 @@ import "swiper/css";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { homeCarousel } from "@/constants";
 import { Autoplay } from "swiper/modules";
+import { homeCarousel } from "@/constants";
 
-const Showcase = () => {
+const ShowcaseCarousel = () => {
 	return (
 		<div
 			style={{
-				backgroundImage: "url(/assets/images/showcase-bg-img.jpg)",
+				backgroundImage: `url(/assets/images/showcase-bg-img.jpg)`,
 			}}
-			className="flex items-center justify-center bg-no-repeat bg-center bg-cover relative"
+			className="flex items-center justify-center bg-no-repeat bg-center bg-cover relative min-h-[70vh]"
 		>
 			<Swiper
 				autoplay={{
@@ -29,7 +29,7 @@ const Showcase = () => {
 						<SwiperSlide key={index}>
 							<div
 								className={`grid grid-cols-1 ${
-									image && "md:grid-cols-2"
+									image ? "md:grid-cols-2" : ""
 								} gap-10 container`}
 							>
 								<div className="flex flex-col items-start justify-center mt-20">
@@ -40,25 +40,24 @@ const Showcase = () => {
 										{description}
 									</p>
 									<div className="flex items-center justify-start gap-4">
-										{cta &&
-											cta.map(
-												({ slug, title }, index) => (
-													<Button
-														variant={
-															index + 1 !== 1
-																? "secondary"
-																: "default"
-														}
-														key={index}
-														asChild
-														size={"lg"}
-													>
-														<Link href={slug}>
-															{title}
-														</Link>
-													</Button>
-												)
-											)}
+										{cta?.map(
+											({ slug, title }, btnIndex) => (
+												<Button
+													variant={
+														btnIndex === 0
+															? "default"
+															: "secondary"
+													}
+													key={btnIndex}
+													asChild
+													size="lg"
+												>
+													<Link href={slug}>
+														{title}
+													</Link>
+												</Button>
+											)
+										)}
 									</div>
 								</div>
 								{image && (
@@ -68,7 +67,7 @@ const Showcase = () => {
 											alt={headline}
 											width={1000}
 											height={1000}
-											className="w-auto h-auto"
+											className="w-auto h-auto object-cover"
 										/>
 									</div>
 								)}
@@ -82,4 +81,4 @@ const Showcase = () => {
 	);
 };
 
-export default Showcase;
+export default ShowcaseCarousel;

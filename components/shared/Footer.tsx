@@ -6,8 +6,7 @@ const Footer = () => {
 		<div className="bg-blue-900 py-8 text-center text-white font-medium uppercase text-xs lg:text-sm">
 			<div className="container">
 				<p>
-					Copyright &copy; {year}, Northhampton Healthcare. All rights
-					reserved
+					&copy; {year} Northhampton Healthcare. All rights reserved
 				</p>
 			</div>
 		</div>

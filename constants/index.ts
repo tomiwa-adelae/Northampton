@@ -228,3 +228,30 @@ export const faqs = [
 		answer: "Yes, we serve multiple locations across Nigeria and continue expanding.",
 	},
 ];
+
+export const coreValues = [
+	{
+		icon: "/assets/icons/heart.svg",
+		name: "Heart",
+		details:
+			"Integrity & Transparency - We operate with honesty and ethical standards in all healthcare services.",
+	},
+	{
+		icon: "/assets/icons/hand-to-hand.svg",
+		name: "Hands",
+		details:
+			"Patient-Centered Care - Our solutions are designed to prioritize the well-being of patients.",
+	},
+	{
+		icon: "/assets/icons/medicine.svg",
+		name: "Medicine",
+		details:
+			"Quality & Affordability - We provide the best healthcare services at cost-effective rates.",
+	},
+	{
+		icon: "/assets/icons/rocket.svg",
+		name: "Rocket",
+		details:
+			"Innovation & Growth - We continuously improve our services to meet evolving healthcare needs.",
+	},
+];
