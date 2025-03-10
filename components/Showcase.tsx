@@ -29,10 +29,10 @@ const Showcase = () => {
 						<SwiperSlide key={index}>
 							<div
 								className={`grid grid-cols-1 ${
-									image && "lg:grid-cols-2"
+									image && "md:grid-cols-2"
 								} gap-10 container`}
 							>
-								<div className="flex flex-col items-start justify-center">
+								<div className="flex flex-col items-start justify-center mt-20">
 									<h1 className="text-3xl md:text-4xl md:leading-loose leading-loose font-bold">
 										{headline}
 									</h1>
@@ -62,13 +62,15 @@ const Showcase = () => {
 									</div>
 								</div>
 								{image && (
-									<Image
-										src={image}
-										alt={headline}
-										width={1000}
-										height={1000}
-										className="w-auto h-auto"
-									/>
+									<div className="flex items-center justify-center md:justify-end">
+										<Image
+											src={image}
+											alt={headline}
+											width={1000}
+											height={1000}
+											className="w-auto h-auto"
+										/>
+									</div>
 								)}
 							</div>
 						</SwiperSlide>

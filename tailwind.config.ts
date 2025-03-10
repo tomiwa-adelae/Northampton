@@ -26,8 +26,13 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			colors: {
+				gray: {
+					"100": "#F9F9F9",
+				},
 				blue: {
-					100: "#F5FAFF",
+					"100": "#F5FAFF",
+					800: "#0056B3",
+					900: "#002B5B",
 				},
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
@@ -69,6 +74,28 @@ const config: Config = {
 					"4": "hsl(var(--chart-4))",
 					"5": "hsl(var(--chart-5))",
 				},
+			},
+			keyframes: {
+				"accordion-down": {
+					from: {
+						height: "0",
+					},
+					to: {
+						height: "var(--radix-accordion-content-height)",
+					},
+				},
+				"accordion-up": {
+					from: {
+						height: "var(--radix-accordion-content-height)",
+					},
+					to: {
+						height: "0",
+					},
+				},
+			},
+			animation: {
+				"accordion-down": "accordion-down 0.2s ease-out",
+				"accordion-up": "accordion-up 0.2s ease-out",
 			},
 		},
 	},

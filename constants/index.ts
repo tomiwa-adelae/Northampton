@@ -135,3 +135,96 @@ export const whoWeAre = [
 		name: "Trust",
 	},
 ];
+
+export const ourServices = [
+	{
+		image: "/assets/images/services-one.jpg",
+		title: "Medical Staffing 👨‍⚕️",
+		description:
+			"Get access to licensed doctors and nurses for hospitals, clinics, and private care.",
+	},
+	{
+		image: "/assets/images/services-two.jpg",
+		title: "Pharmaceutical Supply 💊",
+		description:
+			"Affordable, high-quality medications and medical supplies delivered efficiently.",
+	},
+	{
+		image: "/assets/images/services-three.jpeg",
+		title: "Home Healthcare Services 🏠",
+		description:
+			"Professional nurses & caregivers for home treatment and elderly care.",
+	},
+	{
+		image: "/assets/images/services-four.jpg",
+		title: "Corporate Healthcare Partnerships 🏥",
+		description:
+			"Reduce costs & improve healthcare with our outsourcing solutions for businesses and hospitals.",
+	},
+	{
+		image: "/assets/images/services-five.png",
+		title: "Healthcare Referrals & HMO Support 📋",
+		description:
+			"We connect patients with diagnostic centers and HMOs for specialized care.",
+	},
+];
+
+export const whyChoose = [
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money bag",
+		title: "Affordable Healthcare Solutions",
+	},
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money bag",
+		title: "Affordable Healthcare Solutions",
+	},
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money bag",
+		title: "Affordable Healthcare Solutions",
+	},
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money bag",
+		title: "Affordable Healthcare Solutions",
+	},
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money bag",
+		title: "Affordable Healthcare Solutions",
+	},
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money bag",
+		title: "Affordable Healthcare Solutions",
+	},
+];
+
+export const faqs = [
+	{
+		question: "What services do you offer?",
+		answer: "We provide medical staffing, pharmaceutical supply, home healthcare, and corporate healthcare solutions.",
+	},
+	{
+		question: "Can individuals hire a doctor or nurse?",
+		answer: "Yes! We provide medical professionals for hospitals, clinics, and private individuals.",
+	},
+	{
+		question: "How do I order medications?",
+		answer: "You can order directly through our pharmacy page or contact us for assistance.",
+	},
+	{
+		question: "Do you work with businesses and HMOs?",
+		answer: "Yes! We offer corporate healthcare partnerships and work with HMOs for seamless healthcare solutions.",
+	},
+	{
+		question: "How quickly can I get a doctor or nurse?",
+		answer: "Depending on your location, we provide fast deployment of healthcare professionals within a short timeframe.",
+	},
+	{
+		question: "Is your service available nationwide?",
+		answer: "Yes, we serve multiple locations across Nigeria and continue expanding.",
+	},
+];

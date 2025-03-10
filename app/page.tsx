@@ -1,7 +1,9 @@
 import OurServices from "@/components/OurServices";
+import Contact from "@/components/shared/Contact";
+import FAQs from "@/components/shared/FAQs";
 import Showcase from "@/components/Showcase";
 import WhoWeAre from "@/components/WhoWeAre";
-import React from "react";
+import WhyChoose from "@/components/WhyChoose";
 
 const page = () => {
 	return (
@@ -9,6 +11,9 @@ const page = () => {
 			<Showcase />
 			<WhoWeAre />
 			<OurServices />
+			<WhyChoose />
+			<FAQs />
+			<Contact />
 		</div>
 	);
 };
