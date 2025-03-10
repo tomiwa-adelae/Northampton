@@ -11,6 +11,7 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { MobileNavbar } from "./MobileNavbar";
+import { Button } from "../ui/button";
 
 const Header = () => {
 	const pathname = usePathname();
@@ -76,7 +77,10 @@ const Header = () => {
 						);
 					})}
 				</nav>
-				<div className="lg:hidden">
+				<div className="lg:hidden flex items-center justify-center gap-2 md:gap-4">
+					<Button size={"md"} asChild>
+						<Link href="/contact">Contact us</Link>
+					</Button>
 					<MobileNavbar />
 				</div>
 			</div>

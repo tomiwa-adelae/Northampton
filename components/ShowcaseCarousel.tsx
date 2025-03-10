@@ -13,7 +13,7 @@ const ShowcaseCarousel = () => {
 			style={{
 				backgroundImage: `url(/assets/images/showcase-bg-img.jpg)`,
 			}}
-			className="flex items-center justify-center bg-no-repeat bg-center bg-cover relative min-h-[70vh]"
+			className="flex items-center justify-center bg-no-repeat bg-center bg-cover relative"
 		>
 			<Swiper
 				autoplay={{

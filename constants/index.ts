@@ -23,6 +23,10 @@ export const navLinks = [
 		title: "Our services",
 	},
 	{
+		slug: "/pharmacy",
+		title: "Pharmacy",
+	},
+	{
 		slug: "/board-of-directors",
 		title: "Board of Directors",
 	},
@@ -254,4 +258,87 @@ export const coreValues = [
 		details:
 			"Innovation & Growth - We continuously improve our services to meet evolving healthcare needs.",
 	},
+];
+
+export const pharmaceuticalServices = [
+	{
+		icon: "/assets/icons/medicine.svg",
+		name: "Medicine",
+		title: "Pharmacy Benefits",
+		description:
+			"Enjoy cost-effective pharmaceutical solutions tailored to meet the needs of individuals, hospitals, and corporate organizations.",
+	},
+	{
+		icon: "/assets/icons/delivery-bus.svg",
+		name: "Delivery Bus",
+		title: "Nationwide Pharmacy Spread & Door delivery",
+		description:
+			"NHFHL ensures nationwide availability of medications, with doorstep delivery for convenience.",
+	},
+	{
+		icon: "/assets/icons/clinic.svg",
+		name: "Clinic",
+		title: "Implant Clinic Management",
+		description:
+			"NHFHL supports implant clinics with high-quality medical supplies, expert guidance, and seamless patient management.",
+	},
+	{
+		icon: "/assets/icons/clipboard.svg",
+		name: "Clipboard",
+		title: "HMO TPA",
+		description:
+			"NHFHL simplifies HMO & TPA operations, ensuring efficient claims processing, reimbursements, and health plan administration.",
+	},
+];
+
+export const whyTrustUs = [
+	{
+		icon: "/assets/icons/medicine.svg",
+		name: "Medicine",
+		title: "Certified & Approved Medications",
+		description:
+			"We provide high-quality, fully certified medications that meet all regulatory standards. Our supply chain guarantees genuine drugs from trusted manufacturers.",
+	},
+	{
+		icon: "/assets/icons/delivery-bus.svg",
+		name: "Delivery Bus",
+		title: "Doorstep Delivery",
+		description:
+			"We provide high-quality medications to healthcare providers.",
+	},
+	{
+		icon: "/assets/icons/money-bag.svg",
+		name: "Money-bag",
+		title: "Competitive & Affordable Pricing",
+		description:
+			"We offer cost-effective medication plans for individuals, hospitals, and corporate clients—ensuring healthcare remains accessible without financial strain.",
+	},
+	{
+		icon: "/assets/icons/clipboard.svg",
+		name: "Clipboard",
+		title: "Simplified Claims & HMO Support",
+		description:
+			"We streamline HMO & third-party administration (TPA) services, ensuring seamless claims processing, easy reimbursements, and smooth healthcare financing.",
+	},
+	{
+		icon: "/assets/icons/hospital.svg",
+		name: "Hospital",
+		title: "Reliable Pharmacy & Clinic Partnerships",
+		description:
+			"We work closely with healthcare providers, implant clinics, and corporate organizations to deliver customized pharmaceutical solutions.",
+	},
+	{
+		icon: "/assets/icons/call.svg",
+		name: "Call",
+		title: "24/7 Support & Expert Consultation",
+		description:
+			"Our dedicated pharmaceutical team is available round the clock to assist with medication guidance, orders, and general inquiries.",
+	},
+];
+
+export const subjects = [
+	"Medical Assistance",
+	"General Inquiry",
+	"Business Partnership",
+	"Others",
 ];

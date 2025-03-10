@@ -44,7 +44,7 @@ const OurServices = () => {
 			</div>
 			<div className="flex items-center justify-center container mt-10">
 				<Button variant={"secondary"} size={"lg"} asChild>
-					<Link href="/about">Explore our services</Link>
+					<Link href="/services">Explore our services</Link>
 				</Button>
 			</div>
 		</div>
