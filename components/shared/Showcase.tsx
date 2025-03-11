@@ -20,7 +20,7 @@ const Showcase = ({
 			style={{
 				backgroundImage: `url(${bgImage})`,
 			}}
-			className={`flex items-center justify-center bg-no-repeat bg-center bg-cover relative text-white min-h-screen ${
+			className={`flex items-center justify-center bg-no-repeat bg-center bg-cover relative text-white ${
 				!image && "min-h-screen"
 			}`}
 		>
@@ -29,7 +29,7 @@ const Showcase = ({
 					image && "md:grid-cols-2"
 				}  gap-10 container`}
 			>
-				<div className="flex flex-col items-start justify-center mt-20 z-50">
+				<div className="flex flex-col items-start justify-center mt-20 md:mb-20 z-50">
 					<h1 className="text-3xl md:text-4xl md:leading-relaxed leading-loose font-bold uppercase">
 						{headline}
 					</h1>
