@@ -20,7 +20,7 @@ const Showcase = ({
 			style={{
 				backgroundImage: `url(${bgImage})`,
 			}}
-			className={`flex items-center justify-center bg-no-repeat bg-center bg-cover relative text-white ${
+			className={`flex items-center justify-center bg-no-repeat bg-center bg-cover relative text-white min-h-screen ${
 				!image && "min-h-screen"
 			}`}
 		>
