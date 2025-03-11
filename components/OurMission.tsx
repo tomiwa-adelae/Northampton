@@ -19,7 +19,7 @@ const OurMission = () => {
 					Our Mission
 				</h2>
 				<p className="text-sm leading-loose">
-					At Northampton Healthcare Facility, our mission is to
+					{/* At Northampton Healthcare Facility, our mission is to
 					provide top-notch, cost-effective healthcare services that
 					prioritize quality, accessibility, and innovation. We are
 					committed to delivering compassionate and professional
@@ -28,7 +28,9 @@ const OurMission = () => {
 					strain. Through our dedicated team of medical professionals,
 					pharmaceutical expertise, and strategic partnerships, we
 					strive to make healthcare more affordable, efficient, and
-					impactful across Nigeria and beyond.
+					impactful across Nigeria and beyond. */}
+					To be the trusted name in healthcare delivery, offering real
+					time value for money to our clients.
 				</p>
 			</div>
 		</div>

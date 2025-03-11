@@ -4,6 +4,15 @@ import FAQs from "@/components/shared/FAQs";
 import HaveEnquiry from "@/components/shared/HaveEnquiry";
 import Showcase from "@/components/shared/Showcase";
 import WhyTrust from "@/components/WhyTrust";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Northampton Pharmacy | Affordable Medications & Nationwide Delivery",
+	description:
+		"Order affordable, high-quality medications from NHFHL Pharmacy. We offer doorstep delivery, prescription fulfillment, and corporate medical supply solutions across Nigeria.",
+	keywords:
+		"Pharmacy in Nigeria, buy medicine online, prescription fulfillment, pharmacy delivery service, pharmaceutical supplier, HMO pharmacy, affordable medications, prof akinteye ademola, ademola, akinteye, simon akinteye",
+};
 
 const page = () => {
 	return (

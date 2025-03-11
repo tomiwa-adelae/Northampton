@@ -7,7 +7,7 @@ export const phoneNumbers = [
 ];
 export const whatsappNumber = "08050399780";
 export const address =
-	"51b, Agboola Ajumobi Crescent, Magodo Phase 2, Lagos State";
+	"51B, Agboola Ajumobi Crescent, Magodo Phase 2, Lagos State";
 
 export const navLinks = [
 	{
@@ -63,7 +63,7 @@ export const homeCarousel = [
 				slug: "/about",
 			},
 		],
-		image: "/assets/images/nurse.png",
+		image: "/assets/images/nurse-three.png",
 	},
 	{
 		headline: "Bringing Quality Healthcare to Your Doorstep",
@@ -75,7 +75,7 @@ export const homeCarousel = [
 				slug: "/services",
 			},
 		],
-		image: "/assets/images/nurse.png",
+		image: "/assets/images/nurse-two.png",
 	},
 	{
 		headline: "Healthcare Solutions for Businesses & HMOs",
@@ -87,13 +87,13 @@ export const homeCarousel = [
 				slug: "/contact",
 			},
 		],
-		image: "/assets/images/nurse.png",
+		image: "/assets/images/nurse-five.png",
 	},
 	{
 		headline: "Expert Medical Staffing, On Demand",
 		description:
 			"NHFHL provides qualified doctors, nurses, and caregivers for hospitals, clinics, and individuals—whenever you need them.",
-		image: "/assets/images/nurse.png",
+		image: "/assets/images/nurse-three.png",
 	},
 	{
 		headline: "We Make Healthcare Easy & Stress-Free",
@@ -105,7 +105,7 @@ export const homeCarousel = [
 				slug: "/contact",
 			},
 		],
-		image: "/assets/images/nurse.png",
+		image: "/assets/images/nurse-four.png",
 	},
 ];
 
@@ -154,7 +154,7 @@ export const ourServices = [
 			"Affordable, high-quality medications and medical supplies delivered efficiently.",
 	},
 	{
-		image: "/assets/images/services-three.jpeg",
+		image: "/assets/images/services-three.jpg",
 		title: "Home Healthcare Services 🏠",
 		description:
 			"Professional nurses & caregivers for home treatment and elderly care.",
@@ -180,29 +180,29 @@ export const whyChoose = [
 		title: "Affordable Healthcare Solutions",
 	},
 	{
-		icon: "/assets/icons/money-bag.svg",
-		name: "Money bag",
-		title: "Affordable Healthcare Solutions",
+		icon: "/assets/icons/doctor.svg",
+		name: "Doctor",
+		title: "Experienced & Licensed Medical Professionals",
 	},
 	{
-		icon: "/assets/icons/money-bag.svg",
-		name: "Money bag",
-		title: "Affordable Healthcare Solutions",
+		icon: "/assets/icons/delivery-bus.svg",
+		name: "Delivery Bus",
+		title: "Fast & Reliable Service Delivery",
 	},
 	{
-		icon: "/assets/icons/money-bag.svg",
-		name: "Money bag",
-		title: "Affordable Healthcare Solutions",
+		icon: "/assets/icons/hospital.svg",
+		name: "Hospital",
+		title: "Comprehensive Healthcare Coverage",
 	},
 	{
-		icon: "/assets/icons/money-bag.svg",
-		name: "Money bag",
-		title: "Affordable Healthcare Solutions",
+		icon: "/assets/icons/hand-to-hand.svg",
+		name: "Hands shaking",
+		title: "Trusted by Hospitals & Businesses",
 	},
 	{
-		icon: "/assets/icons/money-bag.svg",
-		name: "Money bag",
-		title: "Affordable Healthcare Solutions",
+		icon: "/assets/icons/clipboard.svg",
+		name: "Clipboard",
+		title: "Innovative & Flexible Healthcare Plans",
 	},
 ];
 
@@ -372,15 +372,33 @@ export const contactDetails = [
 
 export const ourTeams = [
 	{
-		image: "/assets/images/tomiwa-adelae.JPG",
-		name: "Dr. Michael Adeyemi",
-		title: "Chairman, Board of Directors",
-		bio: "Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.",
+		image: "/assets/images/ademola-akinteye.jpeg",
+		name: "Prof. Ademola Akinteye, PhD, D. Phil.",
+		title: "Chairman Board of Directors",
+		bio: "Prof. Akinteye is currently the Dean of Faculty at Charisma International Business School and a Professor of Finance with Charisma University, Turks and Caicos Island, British Overseas Territory. He is a visiting professor to the University of Applied Sciences, Business School of Netherlands, Monarch University Switzerland and Precious Cornerstone University, Ibadan, Nigeria. Prof. Akinteye is a member of International Faculty at SPINTELLIGENT South Africa where he leads forums and trainings in areas covering Financial Modelling for the Power Sector, Financing the Power Sector in Africa, Power Purchase Agreements, EPC Contracts and Revenue Assurance for the Power Sector. Professionally, Prof. Akinteye is a Fellow of the Institute of Chartered Accountants of Nigeria (FCA), Certified Forensic Investigation Professional (CFIP), Certified in Cybersecurity, and Associate, Chartered Insurance Institute of Nigeria (ACII), Associate, Chartered Institute of Arbitrators, UK (ACIArb), Associate, Institute of Environmental Accountants of Nigeria (AIEA), Fellow, International Institute of Certified Forensic Investigation Professional USA and a Microsoft Certified Systems Engineer (MCSE). He is happily married with four children, Prof. Akinteye is a golfer.",
 	},
 	{
-		image: "/assets/images/tomiwa-adelae.JPG",
-		name: "Dr. Michael Adeyemi",
-		title: "Chairman, Board of Directors",
-		bio: "Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.Dr. Michael Adeyemi is a seasoned healthcare strategist with over two decades of experience in medical administration, policy development, and healthcare governance. As Chairman of the Board of Directors at Northampton Healthcare Facility, he provides strategic oversight and leadership, ensuring NHFHL continues to deliver affordable, high-quality healthcare solutions to individuals and businesses. With a strong background in hospital administration and public health policy, Dr. Adeyemi has played a key role in developing sustainable healthcare models that improve access to medical services in Nigeria. Before joining NHFHL, he served as the Executive Director of a multinational healthcare consulting firm, where he specialized in health system reforms, medical staffing solutions, and corporate healthcare strategies. Dr. Adeyemi is passionate about bridging the gap between healthcare institutions and patients, leveraging innovative solutions to make medical services more accessible and cost-effective.",
+		image: "/assets/images/sample-img.jpg",
+		name: "Dr. Afolabi Tunmise Hezekiah, BDS, MPH MBA, PGD, MA, MSC, PhD",
+		title: "Director of Strategic Partnership",
+		bio: "Dr. Afolabi Tunmise is a renowned Dental Surgeon, a Dr. in Public Health (PHD -Health Policy &amp; Management). He is presently the Deputy Director, Clinical &amp; Admin St Bithias Hospital Ibadan Nigeria, and the Executive Director Relief hospital and Dental Center.  He started his professional career in University of Ibadan – 2007 and graduated with Bachelor of Dental Surgery Degree. Advanced to Masters in Public Health in 2012 and became a Fellow of Institute of Health Science Research &amp; Administration, Nigeria – 2024. His love for God and his ministry also motivated him to study Masters in Christian Religion Study – 2024. ",
 	},
+	{
+		image: "/assets/images/sample-img.jpg",
+		name: "Oshota, S.O. (PhD)",
+		title: "Executive Business Aquisition",
+		bio: "Dr. Oshota S.O hails from Ogun State Nigeria, a renowned lecturer in Precious Cornerstone University, Ibadan, Nigeria 2022-till date and also works at Nigerian Institute of Social and Economic Research 2018-till date as a fellow.  He graduated with Bachelor of Science (Hons.) Economics 2007 from Olabisi Onabanjo University, Ago-Iwoye, Ogun State. Advanced his career with Master of Science in Economics (M.Sc) University of Ibadan, Nigeria 2011. He is presently a Doctor of Philosophy (PHD) University of Ibadan, Nigeria 2021. He is an Associate Member of the Institute of Chartered Accountant of Nigeria (ACA) Member, Nigeria Economic Society (NES). He is happily marred and blessed with children. His areas of interest are in International Trade and Finance, Development Economics, Public Finance, Energy Economics (renewable energy and environment) and Econometrics Modelling.",
+	},
+	{
+		image: "/assets/images/adenike-akinteye.jpg",
+		name: "Pst. Mrs. Adenike Olubunmi Akinteye, BSC (UNAD), MSC (UI), PGDE (TASUED)",
+		title: "Executive Administrator",
+		bio: "A seasoned educationist with over ten years experience in early childhood education. Professionally registered with Teachers Registration Council of Nigeria (TRCN).  She started her educational career at Post Graduate Diploma in Education, Tai Solarin University, Ijagun, ijebu Ode, Nigeria (2016). A dedicated and seasoned administrator with passion for excellence and commitment to children educational development. As a proprietress she is an active member of the National Association of Proprietors of Private Schools and Early Childhood Association of Nigeria, Oyo State. Pst. Mrs. Akinteye Olubunmi is an ordained  Pastor in the Order of the Apostles of Jesus Christ, Courtyard of Christ Light Church, Ibadan, Nigeria (2021-Date).",
+	},
+];
+
+export const enquiriesImages = [
+	"/assets/images/enquiry-one.jpg",
+	"/assets/images/enquiry-three.jpg",
+	"/assets/images/enquiry-two.jpg",
 ];

@@ -5,6 +5,15 @@ import OurVision from "@/components/OurVision";
 import Contact from "@/components/shared/Contact";
 import Showcase from "@/components/shared/Showcase";
 import { Spotlight } from "@/components/ui/spotlight-new";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "About Northampton | Our Mission, Vision & Leadership in Healthcare",
+	description:
+		"Learn about Northampton Healthcare Facility—our mission, vision, and commitment to delivering cost-effective, high-quality healthcare solutions across Nigeria.",
+	keywords:
+		"About NHFHL, healthcare mission, trusted medical provider, healthcare leadership, healthcare facility in Nigeria, affordable healthcare solutions, prof akinteye ademola, ademola, akinteye, simon akinteye",
+};
 
 const page = () => {
 	return (

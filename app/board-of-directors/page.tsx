@@ -1,6 +1,15 @@
 import OurTeams from "@/components/OurTeams";
 import Contact from "@/components/shared/Contact";
 import Showcase from "@/components/shared/Showcase";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Northampton Board of Directors | Meet Our Leadership Team",
+	description:
+		"Meet the Board of Directors at Northampton Healthcare Facility—the experts driving strategic healthcare solutions and corporate growth.",
+	keywords:
+		"Healthcare leadership, NHFHL board members, medical governance, trusted healthcare provider, corporate healthcare management, prof akinteye ademola, ademola, akinteye, simon akinteye",
+};
 
 const page = () => {
 	return (

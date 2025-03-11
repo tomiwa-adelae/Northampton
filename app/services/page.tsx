@@ -3,6 +3,15 @@ import FAQs from "@/components/shared/FAQs";
 import Showcase from "@/components/shared/Showcase";
 import WhatWeOffer from "@/components/WhatWeOffer";
 import { whatsappNumber } from "@/constants";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Comprehensive Healthcare Services | NHFHL Medical & Pharmacy Solutions",
+	description:
+		"Explore NHFHL’s comprehensive healthcare services, including medical staffing, pharmaceutical supply, home healthcare, corporate partnerships, and HMO support.",
+	keywords:
+		"Healthcare services, medical staffing, pharmaceutical supply, corporate healthcare solutions, HMO support, best healthcare provider in Nigeria, prof akinteye ademola, ademola, akinteye, simon akinteye",
+};
 
 const page = () => {
 	return (

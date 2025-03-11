@@ -1,4 +1,5 @@
-import { email, whatsappNumber } from "@/constants";
+"use client";
+import { email, enquiriesImages, whatsappNumber } from "@/constants";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Spotlight } from "../ui/spotlight-new";
@@ -10,27 +11,17 @@ const HaveEnquiry = () => {
 			<div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
 				<div>
 					<div className="flex items-center justify-start mb-8">
-						<Image
-							src={"/assets/images/enquiry-one.jpg"}
-							alt={"A nurse"}
-							width={1000}
-							height={1000}
-							className="w-36 h-36 object-cover rounded-full border-8 border-white"
-						/>
-						<Image
-							src={"/assets/images/enquiry-three.jpg"}
-							alt={"A nurse"}
-							width={1000}
-							height={1000}
-							className="w-36 h-36 object-cover rounded-full ml-[-25px] border-4 border-white "
-						/>
-						<Image
-							src={"/assets/images/enquiry-two.jpg"}
-							alt={"A nurse"}
-							width={1000}
-							height={1000}
-							className="w-36 h-36 object-cover rounded-full ml-[-25px] border-4 border-white"
-						/>
+						{enquiriesImages.map((enquiry, index) => (
+							<Image
+								src={enquiry}
+								alt={"A nurse"}
+								width={1000}
+								height={1000}
+								className={`w-36 h-36 object-cover rounded-full border-8 hover:scale-105 transition-all border-white ${
+									index + 1 !== 1 && "ml-[-25px]"
+								}`}
+							/>
+						))}
 					</div>
 					<Button
 						className="ml-3"

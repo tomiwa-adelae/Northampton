@@ -10,7 +10,7 @@ const OurVision = () => {
 					Our Vision
 				</h2>
 				<p className="text-sm leading-loose">
-					At Northampton Healthcare Facility, our vision is to become
+					{/* At Northampton Healthcare Facility, our vision is to become
 					the leading force in healthcare delivery across Africa,
 					ensuring that quality medical services are accessible,
 					affordable, and patient-centered. We aim to revolutionize
@@ -20,7 +20,9 @@ const OurVision = () => {
 					sustainable solutions that enhance the well-being of
 					individuals, families, and businesses. Through continuous
 					growth and advancement, we strive to set new standards in
-					healthcare accessibility and efficiency.
+					healthcare accessibility and efficiency. */}
+					To be the provider of choice for healthcare delivery in
+					Africa.
 				</p>
 			</div>
 			<div className="lg:col-span-2 flex items-center justify-center">

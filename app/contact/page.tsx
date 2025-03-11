@@ -9,6 +9,16 @@ const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
 	ssr: false,
 });
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Contact Northampton | Get in Touch for Healthcare & Pharmacy Solutions",
+	description:
+		"Need help? Contact Northampton Healthcare Facility for medical staffing, pharmacy orders, corporate healthcare, and HMO support. Call, email, or visit us today!",
+	keywords:
+		"Contact NHFHL, healthcare support, medical inquiries, pharmacy orders, get healthcare assistance, call NHFHL, medical services in Nigeria, prof akinteye ademola, ademola, akinteye, simon akinteye",
+};
+
 const page = () => {
 	return (
 		<div>

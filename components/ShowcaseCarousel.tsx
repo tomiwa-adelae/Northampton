@@ -13,7 +13,7 @@ const ShowcaseCarousel = () => {
 			style={{
 				backgroundImage: `url(/assets/images/showcase-bg-img.jpg)`,
 			}}
-			className="flex items-center justify-center bg-no-repeat bg-center bg-cover relative"
+			className="flex items-center justify-center bg-no-repeat bg-center bg-cover relative bg-orange-400"
 		>
 			<Swiper
 				autoplay={{
@@ -28,49 +28,49 @@ const ShowcaseCarousel = () => {
 					({ headline, description, cta, image }, index) => (
 						<SwiperSlide key={index}>
 							<div
-								className={`grid grid-cols-1 ${
-									image ? "md:grid-cols-2" : ""
-								} gap-10 container`}
+								className={`flex items-center justify-center container min-h-[70vh]`}
 							>
-								<div className="flex flex-col items-start justify-center mt-20">
-									<h1 className="text-3xl md:text-4xl md:leading-loose leading-loose font-bold uppercase">
-										{headline}
-									</h1>
-									<p className="text-sm md:text-base md:leading-loose leading-loose text-gray-100 my-6">
-										{description}
-									</p>
-									<div className="flex items-center justify-start gap-4">
-										{cta?.map(
-											({ slug, title }, btnIndex) => (
-												<Button
-													variant={
-														btnIndex === 0
-															? "default"
-															: "secondary"
-													}
-													key={btnIndex}
-													asChild
-													size="lg"
-												>
-													<Link href={slug}>
-														{title}
-													</Link>
-												</Button>
-											)
-										)}
+								<div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16">
+									<div className="flex flex-col items-start justify-center">
+										<h1 className="text-3xl md:text-4xl md:leading-loose leading-loose font-bold uppercase">
+											{headline}
+										</h1>
+										<p className="text-sm md:text-base md:leading-loose leading-loose text-gray-100 my-6">
+											{description}
+										</p>
+										<div className="flex items-center justify-start gap-4">
+											{cta?.map(
+												({ slug, title }, btnIndex) => (
+													<Button
+														variant={
+															btnIndex === 0
+																? "default"
+																: "secondary"
+														}
+														key={btnIndex}
+														asChild
+														size="lg"
+													>
+														<Link href={slug}>
+															{title}
+														</Link>
+													</Button>
+												)
+											)}
+										</div>
 									</div>
+									{image && (
+										<div className="flex items-center justify-center md:justify-end">
+											<Image
+												src={image}
+												alt={headline}
+												width={1000}
+												height={1000}
+												className="w-auto h-auto object-cover aspect-auto"
+											/>
+										</div>
+									)}
 								</div>
-								{image && (
-									<div className="flex items-center justify-center md:justify-end">
-										<Image
-											src={image}
-											alt={headline}
-											width={1000}
-											height={1000}
-											className="w-auto h-auto object-cover"
-										/>
-									</div>
-								)}
 							</div>
 						</SwiperSlide>
 					)
