@@ -5,7 +5,7 @@ export const phoneNumbers = [
 	"08050399782",
 	"08157425111",
 ];
-export const whatsappNumber = "2348157425111";
+export const whatsappNumber = "23407030832001";
 export const address =
 	"51B, Agboola Ajumobi Crescent, Magodo Phase 2, Lagos State";
 
