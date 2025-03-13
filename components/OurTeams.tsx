@@ -5,7 +5,7 @@ import { ourTeams } from "@/constants";
 
 const OurTeams = () => {
 	return (
-		<div className="bg-gradient-to-r from-blue-100 to-white py-16 relative md:overflow-x-visible min-h-screen overflow-x-hidden">
+		<div className="bg-gradient-to-r from-blue-100 to-white py-16 relative min-h-screen">
 			<Spotlight />
 			<div className="container">
 				<h2 className="uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6 text-center">
