@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import WhatsappIcon from "@/components/shared/WhatsappIcon";
+import { Toaster } from "@/components/ui/sonner";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function RootLayout({
 				{children}
 				<WhatsappIcon />
 				<Footer />
+				<Toaster />
 			</body>
 		</html>
 	);

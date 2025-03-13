@@ -28,6 +28,9 @@ import {
 import { subjects } from "@/constants";
 import { useState } from "react";
 import { Spotlight } from "../ui/spotlight-new";
+import { contactUs } from "@/lib/actions/contact.actions";
+
+import { toast } from "sonner";
 
 const FormSchema = z.object({
 	name: z
@@ -60,7 +63,27 @@ export function ContactForm() {
 		},
 	});
 
-	async function onSubmit(data: z.infer<typeof FormSchema>) {}
+	async function onSubmit(data: z.infer<typeof FormSchema>) {
+		try {
+			const user = {
+				name: data.name,
+				email: data.email,
+				phoneNumber: value,
+				subject: data.subject,
+				message: data.message,
+			};
+			await contactUs(user);
+			toast("Thank You for Reaching Out!", {
+				description:
+					"We've received your message and our team will get back to you as soon as possible.",
+			});
+		} catch (error) {
+			toast("Error!", {
+				description:
+					"An error occurred and we couldn't get your details. Try reaching out to us through other means",
+			});
+		}
+	}
 
 	return (
 		<div className="bg-white py-16 relative overflow-hidden">
@@ -180,8 +203,14 @@ export function ContactForm() {
 								</FormItem>
 							)}
 						/>
-						<Button size="lg" type="submit">
-							Send message
+						<Button
+							disable={form.formState.isSubmitting}
+							size="lg"
+							type="submit"
+						>
+							{form.formState.isSubmitting
+								? "Sending..."
+								: "Send message"}
 						</Button>
 					</form>
 				</Form>
