@@ -204,7 +204,7 @@ export function ContactForm() {
 							)}
 						/>
 						<Button
-							disable={form.formState.isSubmitting}
+							disabled={form.formState.isSubmitting}
 							size="lg"
 							type="submit"
 						>
