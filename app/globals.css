@@ -103,11 +103,3 @@
 .PhoneInput input {
 	outline: none;
 }
-
-body {
-	overflow-x: hidden !important;
-}
-
-.ourteams {
-	overflow-x: hidden !important;
-}
