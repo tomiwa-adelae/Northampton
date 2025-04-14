@@ -7,13 +7,13 @@ import Link from "next/link";
 const WhyChoose = () => {
 	return (
 		<div className="bg-blue-100 py-16">
-			<div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div className="container grid grid-cols-1 md:grid-cols-2 gap-4">
 				<Image
 					src={"/assets/images/doctors.jpg"}
 					alt={"A group a doctors and nurses"}
 					width={1000}
 					height={1000}
-					className="aspect-video object-cover"
+					className="aspect-video object-cover rounded-lg"
 				/>
 				<div className="flex flex-col items-center justify-center">
 					<SectionHeader
@@ -26,7 +26,7 @@ const WhyChoose = () => {
 					/>
 				</div>
 			</div>
-			<div className="mt-16 container grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div className="mt-16 container grid grid-cols-1 md:grid-cols-2 gap-4">
 				{whyChoose.map(({ icon, name, title }, index) => (
 					<div
 						key={index}
@@ -39,7 +39,7 @@ const WhyChoose = () => {
 							height={1000}
 							className="w-10 h-10 lg:w-14 lg:h-14"
 						/>
-						<h4 className="uppercase font-medium text-xs lg:text-sm text-primary">
+						<h4 className="uppercase font-medium text-base text-primary">
 							{title}
 						</h4>
 					</div>

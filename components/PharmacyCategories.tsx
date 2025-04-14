@@ -7,7 +7,7 @@ import { pharmaceuticalServices } from "@/constants";
 const PharmacyCategories = () => {
 	return (
 		<div className="bg-gradient-to-r from-blue-100 to-sky-100 py-16 relative overflow-hidden">
-			<Spotlight />
+			{/* <Spotlight /> */}
 			<SectionHeader
 				description={
 					"At Northampton Healthcare Facility, we provide high-quality medications, seamless prescription fulfillment, and nationwide pharmaceutical distribution. Whether you're an individual, hospital, or business, our pharmacy services ensure you get the right medications, at the right time, with the best convenience. From doorstep deliveries to HMO support, we are committed to making healthcare affordable, accessible, and stress-free for all."
@@ -16,7 +16,7 @@ const PharmacyCategories = () => {
 				subTitle={"Reliable & Affordable"}
 				position={"center"}
 			/>
-			<div className="mt-16 container grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div className="mt-8 container grid grid-cols-1 md:grid-cols-2 gap-8">
 				{pharmaceuticalServices.map(
 					({ icon, name, title, description }, index) => (
 						<div
@@ -30,10 +30,10 @@ const PharmacyCategories = () => {
 								height={1000}
 								className="w-32 h-32 mt-10"
 							/>
-							<h4 className="uppercase text-primary font-medium text-base leading-loose mt-8">
+							<h4 className="uppercase text-primary font-medium text-base md:text-lg mt-8">
 								{title}
 							</h4>
-							<p className="text-sm leading-loose text-gray-900 mt-2">
+							<p className="text-base text-muted-foreground mt-1">
 								{description}
 							</p>
 						</div>

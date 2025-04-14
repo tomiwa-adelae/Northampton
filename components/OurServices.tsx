@@ -8,7 +8,7 @@ import { ourServices } from "@/constants";
 const OurServices = () => {
 	return (
 		<div className="bg-white py-16 relative overflow-hidden">
-			<Spotlight />
+			{/* <Spotlight /> */}
 			<SectionHeader
 				description={
 					"We are committed to making healthcare more accessible, affordable, and efficient by offering flexible solutions tailored to hospitals, clinics, and individuals."
@@ -18,7 +18,7 @@ const OurServices = () => {
 				position="left"
 				color="secondary"
 			/>
-			<div className="grid grid-col-1 md:grid-cols-2 container mt-16 gap-8">
+			<div className="grid grid-col-1 md:grid-cols-2 container mt-8 gap-4">
 				{ourServices.map(({ title, description, image }, index) => (
 					<div
 						key={index}
@@ -32,10 +32,10 @@ const OurServices = () => {
 							className="aspect-video object-cover h-auto w-auto group-hover:scale-105 transition-all"
 						/>
 						<div className="p-8">
-							<h4 className="uppercase text-secondary font-medium text-base leading-loose">
+							<h4 className="uppercase text-secondary font-medium text-base md:text-lg">
 								{title}
 							</h4>
-							<p className="text-sm leading-loose text-gray-900 mt-2">
+							<p className="text-base text-muted-foreground mt-1">
 								{description}
 							</p>
 						</div>

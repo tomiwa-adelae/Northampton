@@ -6,11 +6,11 @@ const OurStory = () => {
 			{/* <Spotlight /> */}
 			<div className="lg:col-span-3 flex items-start justify-center flex-col">
 				<h2
-					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 				>
 					Our Story
 				</h2>
-				<p className="text-sm leading-loose">
+				<p className="text-base">
 					For years, accessing affordable healthcare has been a
 					challenge. Northampton Healthcare Facility was established
 					to change that. We believe that no one should struggle to

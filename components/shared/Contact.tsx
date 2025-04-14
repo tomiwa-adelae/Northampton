@@ -13,15 +13,15 @@ const Contact = ({
 	cta?: any;
 }) => {
 	return (
-		<div className="bg-gradient-to-r from-cyan-600 to-blue-800 text-white pt-10">
+		<div className="bg-gradient-to-r from-blue-100 to-sky-100 pt-8">
 			<div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
 				<div className="flex items-start flex-col justify-center">
 					<h2
-						className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose md:leading-loose lg:leading-normal  font-semibold mb-2`}
+						className={`uppercase text-primary text-2xl md:text-3xl font-semibold mb-2`}
 					>
 						{title}
 					</h2>
-					<p className="text-sm leading-loose text-gray-100 mb-6">
+					<p className="text-base text-muted-foreground mb-6">
 						{description}
 					</p>
 					<div className="flex md:flex-col lg:flex-row items-center justify-start gap-4">
@@ -32,7 +32,7 @@ const Contact = ({
 							) => (
 								<Button
 									variant={
-										index === 0 ? "white" : "secondary"
+										index === 0 ? "default" : "secondary"
 									}
 									asChild
 									size={"lg"}

@@ -21,7 +21,7 @@ const Header = () => {
 				<a
 					target="_blank"
 					href={`mailto:${email}`}
-					className="flex items-center justify-center gap-2"
+					className="flex items-center justify-center gap-2 hover:text-primary transition-all hover:underline"
 				>
 					<Image
 						src={"/assets/icons/email.svg"}
@@ -36,7 +36,7 @@ const Header = () => {
 				<a
 					target="_blank"
 					href={`https://wa.me/${whatsappNumber}`}
-					className="flex items-center justify-center gap-2"
+					className="flex items-center justify-center gap-2 hover:text-primary transition-all hover:underline"
 				>
 					<Image
 						src={"/assets/icons/whatsapp.svg"}

@@ -34,17 +34,17 @@ const HaveEnquiry = () => {
 				</div>
 				<div>
 					<h2
-						className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-secondary font-semibold mb-2 md:mb-3`}
+						className={`uppercase text-2xl md:text-3xl text-secondary font-semibold mb-2 md:mb-3`}
 					>
 						Have Enquiries?
 					</h2>
-					<p className="text-sm leading-loose">
-						Our team is ready to provide the information you
-						need—whether it’s about medication orders, bulk
-						purchases, pharmacy partnerships, or general inquiries.
+					<p className="text-base text-muted-foreground">
+						Our team is ready to provide the information you need,
+						whether it’s about medication orders, bulk purchases,
+						pharmacy partnerships, or general inquiries.
 					</p>
 					<div className="text-xs md:text-sm font-medium mt-8">
-						<div className="flex items-center justify-between gap-8">
+						<div className="flex items-center justify-between gap-4">
 							<a
 								target="_blank"
 								href={`https://wa.me/${whatsappNumber}`}
@@ -77,7 +77,7 @@ const HaveEnquiry = () => {
 						<a
 							target="_blank"
 							href={`mailto:${email}`}
-							className="flex items-center justify-start mt-8 hover:text-secondary transition-all gap-2"
+							className="flex items-center justify-start mt-4 hover:text-secondary transition-all gap-2"
 						>
 							<Image
 								src={"/assets/icons/email.svg"}

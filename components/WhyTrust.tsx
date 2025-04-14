@@ -6,16 +6,16 @@ const WhyTrust = () => {
 		<div className="py-16 bg-gray-100">
 			<div className="container">
 				<h2
-					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mb-2 md:mb-3`}
+					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mb-2 md:mb-3`}
 				>
 					Why Trust Northampton Healthcare Pharmacy?
 				</h2>
-				<p className="text-sm leading-loose">
+				<p className="text-base">
 					We provide high-quality medical staffing, pharmaceutical
 					supplies, home healthcare, and corporate healthcare
 					partnerships tailored to your needs.
 				</p>
-				<div className="grid grid-col-1 md:grid-cols-2 mt-16 gap-8">
+				<div className="grid grid-col-1 md:grid-cols-2 mt-8 gap-8">
 					{whyTrustUs.map(
 						({ title, name, icon, description }, index) => (
 							<div
@@ -30,11 +30,11 @@ const WhyTrust = () => {
 										height={1000}
 										className="w-16 h-1w-16"
 									/>
-									<h4 className="uppercase text-primary font-medium text-base leading-loose">
+									<h4 className="uppercase text-primary font-medium text-base md:text-lg">
 										{title}
 									</h4>
 								</div>
-								<p className="text-sm leading-loose text-gray-900 mt-2">
+								<p className="text-base text-muted-foreground mt-2">
 									{description}
 								</p>
 							</div>

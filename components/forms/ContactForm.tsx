@@ -35,7 +35,7 @@ import { toast } from "sonner";
 const FormSchema = z.object({
 	name: z
 		.string()
-		.min(2, { message: "First name must be at least 2 characters." }),
+		.min(2, { message: "Name must be at least 2 characters." }),
 	email: z
 		.string({ required_error: "Email is required." })
 		.email("Invalid email address."),
@@ -43,7 +43,7 @@ const FormSchema = z.object({
 		message: "Invalid phone number",
 	}),
 	subject: z.string({
-		required_error: "Highest level of education is required.",
+		required_error: "Subject is required.",
 	}),
 	message: z.string().min(10, {
 		message: "Message must be at least 10 characters.",

@@ -5,11 +5,11 @@ const OurVision = () => {
 		<div className="container pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 			<div className="lg:col-span-3 flex items-start justify-center flex-col">
 				<h2
-					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 				>
 					Our Vision
 				</h2>
-				<p className="text-sm leading-loose">
+				<p className="text-base">
 					{/* At Northampton Healthcare Facility, our vision is to become
 					the leading force in healthcare delivery across Africa,
 					ensuring that quality medical services are accessible,

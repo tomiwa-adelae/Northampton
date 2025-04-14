@@ -38,7 +38,7 @@ const ContactDetails = () => {
 													: "#"
 											}
 											key={idx}
-											className="group-hover:text-secondary transition-all text-xs font-medium leading-loose text-gray-900 mt-2 break-words"
+											className="group-hover:text-secondary transition-all text-base font-medium text-gray-900 mt-2 break-words"
 										>
 											{detail}
 										</a>

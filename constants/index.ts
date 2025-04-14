@@ -38,7 +38,7 @@ export const navLinks = [
 
 export const homeCarousel = [
 	{
-		headline: "Bringing Healthcare Closer – Doctors, Medications & More",
+		headline: "Bringing Healthcare Closer",
 		description:
 			"We provide licensed doctors, nurses, and pharmaceuticals at lower costs, helping hospitals, clinics, and individuals access quality healthcare without expensive retainership fees.",
 		cta: [
@@ -54,7 +54,7 @@ export const homeCarousel = [
 		image: "/assets/images/nurse.png",
 	},
 	{
-		headline: "Your Reliable Partner for Medications & Medical Supplies",
+		headline: "Your Reliable Partner for Medications",
 		description:
 			"With our nationwide pharmacy network, you can access high-quality, affordable medications delivered to your home or hospital.",
 		cta: [
@@ -114,7 +114,7 @@ export const whoWeAre = [
 		icon: "/assets/icons/hospital.svg",
 		title: "Cost-Effective Healthcare solution",
 		description:
-			"We help hospitals, clinics, and individuals save moneyby providing doctors, nurses, and medical supplies on demand.",
+			"We help hospitals, clinics, and individuals save money by providing doctors, nurses, and medical supplies on demand.",
 		name: "Hospital",
 	},
 	{

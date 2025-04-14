@@ -30,13 +30,11 @@ const Showcase = ({
 				}  gap-10 container`}
 			>
 				<div className="flex flex-col items-start justify-center mt-20 md:mb-20 z-50">
-					<h1 className="text-3xl md:text-4xl md:leading-relaxed leading-loose font-bold uppercase">
+					<h1 className="text-4xl lg:text-5xl font-semibold uppercase">
 						{headline}
 					</h1>
-					<p className="text-sm md:text-base md:leading-loose leading-loose text-gray-100 my-6">
-						{description}
-					</p>
-					<div className="flex items-center justify-start gap-4">
+					<p className="text-base my-4">{description}</p>
+					<div className="flex flex-wrap w-full items-center justify-start gap-4">
 						{cta?.map(
 							(
 								{
@@ -52,6 +50,7 @@ const Showcase = ({
 									key={index}
 									asChild
 									size="lg"
+									className="w-full md:w-auto"
 								>
 									<Link href={slug}>{title}</Link>
 								</Button>

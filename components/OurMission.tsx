@@ -14,11 +14,11 @@ const OurMission = () => {
 			</div>
 			<div className="lg:col-span-3 order-1 md:order-2 flex items-start justify-center flex-col">
 				<h2
-					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 				>
 					Our Mission
 				</h2>
-				<p className="text-sm leading-loose">
+				<p className="text-base">
 					{/* At Northampton Healthcare Facility, our mission is to
 					provide top-notch, cost-effective healthcare services that
 					prioritize quality, accessibility, and innovation. We are

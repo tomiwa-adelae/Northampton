@@ -6,7 +6,7 @@ import Image from "next/image";
 const WhatWeOffer = () => {
 	return (
 		<div className="bg-gradient-to-r from-blue-100 to-white py-16 relative overflow-hidden">
-			<Spotlight />
+			{/* <Spotlight /> */}
 			<SectionHeader
 				description={
 					"We provide high-quality medical staffing, pharmaceutical supplies, home healthcare, and corporate healthcare partnerships tailored to your needs."
@@ -28,11 +28,11 @@ const WhatWeOffer = () => {
 					</div>
 					<div className="lg:col-span-3 order-1 md:order-2 flex items-start justify-center flex-col">
 						<h2
-							className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+							className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 						>
 							Medical Staffing
 						</h2>
-						<p className="text-sm leading-loose">
+						<p className="text-base">
 							NHFHL provides qualified, licensed, and highly
 							skilled healthcare professionals to hospitals,
 							clinics, businesses, and individuals. Whether you
@@ -45,11 +45,11 @@ const WhatWeOffer = () => {
 				<div className="pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative overflow-hidden">
 					<div className="lg:col-span-3 flex items-start justify-center flex-col">
 						<h2
-							className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+							className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 						>
 							Pharmaceutical Supply
 						</h2>
-						<p className="text-sm leading-loose">
+						<p className="text-base">
 							We ensure access to high-quality, affordable
 							medications and medical supplies for individuals,
 							pharmacies, and healthcare institutions. NHFHL
@@ -79,11 +79,11 @@ const WhatWeOffer = () => {
 					</div>
 					<div className="lg:col-span-3 order-1 md:order-2 flex items-start justify-center flex-col">
 						<h2
-							className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+							className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 						>
 							Home Healthcare Services
 						</h2>
-						<p className="text-sm leading-loose">
+						<p className="text-base">
 							NHFHL provides professional nursing and caregiving
 							services to patients who need medical attention at
 							home. Whether it's for elderly care, post-surgery
@@ -96,11 +96,11 @@ const WhatWeOffer = () => {
 				<div className="pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative overflow-hidden">
 					<div className="lg:col-span-3 flex items-start justify-center flex-col">
 						<h2
-							className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+							className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 						>
 							Corporate Healthcare Partnerships
 						</h2>
-						<p className="text-sm leading-loose">
+						<p className="text-base">
 							NHFHL provides customized healthcare solutions for
 							businesses, HMOs, and corporate organizations. Our
 							cost-effective healthcare plans help companies
@@ -130,11 +130,11 @@ const WhatWeOffer = () => {
 					</div>
 					<div className="lg:col-span-3 order-1 md:order-2 flex items-start justify-center flex-col">
 						<h2
-							className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+							className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 						>
 							Healthcare Referrals & HMO Support
 						</h2>
-						<p className="text-sm leading-loose">
+						<p className="text-base">
 							We work with trusted hospitals, diagnostic centers,
 							and HMOs to ensure patients get the specialized care
 							they need without delays. Whether you need a

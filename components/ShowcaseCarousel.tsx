@@ -30,15 +30,15 @@ const ShowcaseCarousel = () => {
 							<div
 								className={`flex items-center justify-center container min-h-[70vh]`}
 							>
-								<div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16">
+								<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-16">
 									<div className="flex flex-col items-start justify-center">
-										<h1 className="text-3xl md:text-4xl md:leading-loose leading-loose font-bold uppercase">
+										<h1 className="text-4xl lg:text-5xl font-semibold uppercase">
 											{headline}
 										</h1>
-										<p className="text-sm md:text-base md:leading-loose leading-loose text-gray-100 my-6">
+										<p className="text-base my-4">
 											{description}
 										</p>
-										<div className="flex items-center justify-start gap-4">
+										<div className="flex flex-wrap w-full items-center justify-start gap-4">
 											{cta?.map(
 												({ slug, title }, btnIndex) => (
 													<Button
@@ -49,6 +49,7 @@ const ShowcaseCarousel = () => {
 														}
 														key={btnIndex}
 														asChild
+														className="w-full md:w-auto"
 														size="lg"
 													>
 														<Link href={slug}>
@@ -60,7 +61,7 @@ const ShowcaseCarousel = () => {
 										</div>
 									</div>
 									{image && (
-										<div className="flex items-center justify-center md:justify-end">
+										<div className="flex items-center justify-center lg:justify-end">
 											<Image
 												src={image}
 												alt={headline}

@@ -15,7 +15,7 @@ const CoreValues = () => {
 			</div>
 			<div className="lg:col-span-3 order-1 md:order-2 flex items-start justify-center flex-col">
 				<h2
-					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose text-primary font-semibold mt-4 mb-6`}
+					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
 				>
 					Our Core Values
 				</h2>
@@ -23,7 +23,7 @@ const CoreValues = () => {
 					{coreValues.map(({ icon, name, details }, index) => (
 						<div
 							key={index}
-							className="text-sm flex items-center justify-start gap-4"
+							className="text-base flex items-center justify-start gap-4"
 						>
 							<Image
 								src={icon}

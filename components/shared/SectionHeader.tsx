@@ -15,17 +15,17 @@ const SectionHeader = ({
 }) => {
 	return (
 		<div className={`container ${position === "center" && "text-center"}`}>
-			<h4 className="uppercase text-sm lg:text-base font-medium">
+			<h4 className="uppercase text-sm md:text-base font-medium">
 				{subTitle}
 			</h4>
 			<h2
-				className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose ${
+				className={`uppercase text-2xl md:text-3xl ${
 					color === "primary" ? "text-primary" : "text-secondary"
-				} font-semibold mt-4 mb-6`}
+				} font-semibold mt-2 lg:mt-2.5 mb-3.5`}
 			>
 				{title}
 			</h2>
-			<p className="text-sm leading-loose">{description}</p>
+			<p className="text-base">{description}</p>
 		</div>
 	);
 };
