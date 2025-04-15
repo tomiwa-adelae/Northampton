@@ -30,7 +30,7 @@ const config: Config = {
 					"100": "#F9F9F9",
 				},
 				blue: {
-					"100": "#F5FAFF",
+					100: "#F5FAFF",
 					800: "#0056B3",
 					900: "#002B5B",
 				},

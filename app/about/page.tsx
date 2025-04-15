@@ -19,7 +19,7 @@ const page = () => {
 	return (
 		<div>
 			<Showcase
-				headline="About Northampton Healthcare Facility"
+				headline={<>About Northampton Healthcare Facility</>}
 				description="We are a trusted healthcare provider offering innovative solutions that make quality medical care accessible and affordable. Our mission is to bridge the gap in healthcare delivery by providing top-notch medical staffing, pharmaceutical supplies, and healthcare referrals—ensuring that individuals, families, and businesses receive the best care possible."
 				bgImage="/assets/images/about-showcase-bg-img.jpg"
 			/>

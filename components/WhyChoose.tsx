@@ -20,8 +20,7 @@ const WhyChoose = () => {
 						description={
 							"At Northampton Healthcare Facility, we are revolutionizing the way individuals and businesses access healthcare. Our goal is to provide high-quality medical staffing, pharmaceutical supplies, and healthcare solutions at cost-effective rates. With a team of experienced professionals and a commitment to excellence, we ensure that healthcare remains accessible, reliable, and tailored to your needs."
 						}
-						title={"Redefining Healthcare Access"}
-						subTitle={"Why Choose Northampton"}
+						title={"Why Choose Northampton"}
 						position="left"
 					/>
 				</div>

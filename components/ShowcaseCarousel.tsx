@@ -24,7 +24,7 @@ const ShowcaseCarousel = () => {
 					({ headline, description, cta, image }, index) => (
 						<SwiperSlide
 							key={index}
-							className="flex items-center justify-center pt-16 lg:pt-0 pb-16"
+							className="flex items-center justify-center pt-16 pb-16"
 						>
 							<div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
 								<div className="flex flex-col items-center justify-center">
@@ -82,7 +82,7 @@ const homeCarousel = [
 	{
 		headline: (
 			<>
-				Bringing Healthcare <ColourfulText text={"Closer"} />
+				Bringing Healthcare <br /> <ColourfulText text={"Closer"} />
 			</>
 		),
 		description:
@@ -102,7 +102,8 @@ const homeCarousel = [
 	{
 		headline: (
 			<>
-				Your Reliable Partner for <ColourfulText text={"Medications"} />
+				Your Reliable Partner for <br />{" "}
+				<ColourfulText text={"Medications"} />
 			</>
 		),
 		description:
@@ -135,7 +136,7 @@ const homeCarousel = [
 	{
 		headline: (
 			<>
-				Healthcare Solutions for{" "}
+				Healthcare Solutions for <br />
 				<ColourfulText text={"Businesses & HMOs"} />
 			</>
 		),
@@ -152,7 +153,8 @@ const homeCarousel = [
 	{
 		headline: (
 			<>
-				Expert Medical Staffing, <ColourfulText text={"On Demand"} />
+				Expert Medical Staffing, <br />{" "}
+				<ColourfulText text={"On Demand"} />
 			</>
 		),
 		description:
@@ -162,7 +164,8 @@ const homeCarousel = [
 	{
 		headline: (
 			<>
-				We Make Healthcare Easy & <ColourfulText text={"Stress-Free"} />
+				We Make Healthcare Easy & <br />{" "}
+				<ColourfulText text={"Stress-Free"} />
 			</>
 		),
 		description:

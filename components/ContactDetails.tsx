@@ -1,15 +1,12 @@
 import { contactDetails } from "@/constants";
 import Image from "next/image";
+import SectionHeader from "./shared/SectionHeader";
 
 const ContactDetails = () => {
 	return (
 		<div className="bg-gradient-to-r from-blue-100 to-sky-100 py-16 relative overflow-hidden">
 			<div className="container">
-				<h2
-					className={`uppercase text-2xl md:text-3xl font-semibold mb-2 text-center text-primary`}
-				>
-					Reach us anytime
-				</h2>
+				<SectionHeader title={"Reach us anytime"} position="center" />
 				<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 					{contactDetails.map(
 						({ icon, details, title, name }, index) => (

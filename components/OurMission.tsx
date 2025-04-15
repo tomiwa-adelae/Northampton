@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHeader from "./shared/SectionHeader";
 
 const OurMission = () => {
 	return (
@@ -13,25 +14,14 @@ const OurMission = () => {
 				/>
 			</div>
 			<div className="lg:col-span-3 order-1 md:order-2 flex items-start justify-center flex-col">
-				<h2
-					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
-				>
-					Our Mission
-				</h2>
-				<p className="text-base">
-					{/* At Northampton Healthcare Facility, our mission is to
-					provide top-notch, cost-effective healthcare services that
-					prioritize quality, accessibility, and innovation. We are
-					committed to delivering compassionate and professional
-					medical solutions, ensuring that individuals, families, and
-					businesses receive the care they deserve without financial
-					strain. Through our dedicated team of medical professionals,
-					pharmaceutical expertise, and strategic partnerships, we
-					strive to make healthcare more affordable, efficient, and
-					impactful across Nigeria and beyond. */}
-					To be the trusted name in healthcare delivery, offering real
-					time value for money to our clients.
-				</p>
+				<SectionHeader
+					description={
+						"To be the trusted name in healthcare delivery, offering real time value for money to our clients."
+					}
+					title={"Our Mission"}
+					position={"left"}
+					container={false}
+				/>
 			</div>
 		</div>
 	);

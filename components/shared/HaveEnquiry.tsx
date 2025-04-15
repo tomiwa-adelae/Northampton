@@ -3,6 +3,7 @@ import { email, enquiriesImages, whatsappNumber } from "@/constants";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Spotlight } from "../ui/spotlight-new";
+import SectionHeader from "./SectionHeader";
 
 const HaveEnquiry = () => {
 	return (
@@ -33,16 +34,15 @@ const HaveEnquiry = () => {
 					</Button>
 				</div>
 				<div>
-					<h2
-						className={`uppercase text-2xl md:text-3xl text-secondary font-semibold mb-2 md:mb-3`}
-					>
-						Have Enquiries?
-					</h2>
-					<p className="text-base text-muted-foreground">
-						Our team is ready to provide the information you need,
-						whether it’s about medication orders, bulk purchases,
-						pharmacy partnerships, or general inquiries.
-					</p>
+					<SectionHeader
+						description={
+							"Our team is ready to provide the information you need,						whether it’s about medication orders, bulk purchases,						pharmacy partnerships, or general inquiries."
+						}
+						title={"Have Enquiries?"}
+						position="left"
+						color="secondary"
+						container={false}
+					/>
 					<div className="text-xs md:text-sm font-medium mt-8">
 						<div className="flex items-center justify-between gap-4">
 							<a

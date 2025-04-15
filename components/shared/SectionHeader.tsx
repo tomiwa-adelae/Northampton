@@ -6,18 +6,20 @@ const SectionHeader = ({
 	description,
 	position = "left",
 	color = "primary",
+	container = true,
 }: {
 	title: string;
-	subTitle: string;
-	description: string | React.ReactNode;
+	subTitle?: string;
+	description?: string | React.ReactNode;
 	position?: string;
 	color?: string;
+	container?: boolean;
 }) => {
 	return (
 		<div
-			className={`container ${color === "white" && "text-white"} ${
-				position === "center" && "text-center"
-			}`}
+			className={`${container && "container"} ${
+				color === "white" && "text-white"
+			} ${position === "center" && "text-center"}`}
 		>
 			<h4 className="uppercase text-sm md:text-base font-medium">
 				{subTitle}
@@ -29,7 +31,7 @@ const SectionHeader = ({
 						: color === "white"
 						? "text-white"
 						: "text-secondary"
-				} font-semibold mt-2 lg:mt-2.5 mb-3.5`}
+				} font-semibold mb-3.5`}
 			>
 				{title}
 			</h2>

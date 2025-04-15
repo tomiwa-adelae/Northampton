@@ -16,7 +16,6 @@ const FAQs = () => {
 					"We understand that choosing the right healthcare partner is an important decision. That’s why we’ve answered some of the most common questions about our services, pricing, and processes. Whether you’re an individual looking for a doctor, a business in need of medical staff, or a pharmacy partner, we’re here to provide clarity and support"
 				}
 				title={"Have Questions? We’ve Got Answers!"}
-				subTitle={"Frequently Asked Questions"}
 				position={"left"}
 			/>
 			<div className="container mt-4">

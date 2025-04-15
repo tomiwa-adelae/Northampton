@@ -1,19 +1,15 @@
-import React from "react";
 import SectionHeader from "./shared/SectionHeader";
-import { Spotlight } from "./ui/spotlight-new";
 import Image from "next/image";
 import { pharmaceuticalServices } from "@/constants";
 
 const PharmacyCategories = () => {
 	return (
 		<div className="bg-gradient-to-r from-blue-100 to-sky-100 py-16 relative overflow-hidden">
-			{/* <Spotlight /> */}
 			<SectionHeader
 				description={
 					"At Northampton Healthcare Facility, we provide high-quality medications, seamless prescription fulfillment, and nationwide pharmaceutical distribution. Whether you're an individual, hospital, or business, our pharmacy services ensure you get the right medications, at the right time, with the best convenience. From doorstep deliveries to HMO support, we are committed to making healthcare affordable, accessible, and stress-free for all."
 				}
 				title={"Our Pharmaceutical Services"}
-				subTitle={"Reliable & Affordable"}
 				position={"center"}
 			/>
 			<div className="mt-8 container grid grid-cols-1 md:grid-cols-2 gap-8">

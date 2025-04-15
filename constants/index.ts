@@ -329,3 +329,5 @@ export const enquiriesImages = [
 	"/assets/images/enquiry-three.jpg",
 	"/assets/images/enquiry-two.jpg",
 ];
+
+export const websiteURL = "https://www.northamptonhealthcare.com";

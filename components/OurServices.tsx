@@ -14,7 +14,7 @@ const OurServices = () => {
 					"We are committed to making healthcare more accessible, affordable, and efficient by offering flexible solutions tailored to hospitals, clinics, and individuals."
 				}
 				title={"Quality Healthcare, Made Affordable"}
-				subTitle={"Our services"}
+				// subTitle={"Our services"}
 				position="left"
 				color="secondary"
 			/>

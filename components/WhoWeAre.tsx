@@ -4,17 +4,15 @@ import Image from "next/image";
 import { whoWeAre } from "@/constants";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { Spotlight } from "./ui/spotlight-new";
 
 const WhoWeAre = () => {
 	return (
-		<div className="bg-primary py-16 relative overflow-hidden">
+		<div className="bg-blue-900 py-16 relative overflow-hidden">
 			<SectionHeader
 				description={
 					" Northampton Healthcare Facility Handlers Limited (NHFHL) is a leading healthcare provider dedicated to ensuring easy access to medical professionals, pharmaceutical supplies, and healthcare referrals. We simplify healthcare by connecting individuals, families, and businesses with trusted medical solutions without the need for expensive hospital retainerships."
 				}
 				title={"Your trusted healthcare partner"}
-				subTitle={"Who we are"}
 				position={"left"}
 				color="white"
 			/>

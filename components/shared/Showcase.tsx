@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import React from "react";
 
 const Showcase = ({
 	bgImage,
@@ -8,12 +9,14 @@ const Showcase = ({
 	description,
 	cta,
 	image,
+	fullScreen = false,
 }: {
 	bgImage: string;
-	headline: string;
-	description: string;
+	headline: string | any;
+	description: string | React.ReactNode;
 	cta?: any;
 	image?: string;
+	fullScreen?: boolean;
 }) => {
 	return (
 		<div
@@ -22,14 +25,14 @@ const Showcase = ({
 			}}
 			className={`flex items-center justify-center bg-no-repeat bg-center bg-cover relative text-white ${
 				!image && "min-h-screen"
-			}`}
+			} ${fullScreen && "min-h-[100vh]"}`}
 		>
 			<div
 				className={`grid grid-cols-1 ${
 					image && "md:grid-cols-2"
-				}  gap-10 container`}
+				}  gap-10 container pt-20`}
 			>
-				<div className="flex flex-col items-start justify-center mt-20 md:mb-20 z-50">
+				<div className="flex flex-col items-start justify-center z-50">
 					<h1 className="text-4xl lg:text-5xl font-semibold uppercase">
 						{headline}
 					</h1>

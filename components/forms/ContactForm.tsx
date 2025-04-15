@@ -29,7 +29,9 @@ import { subjects } from "@/constants";
 import { useState } from "react";
 import { contactUs } from "@/lib/actions/contact.actions";
 
-import { toast } from "sonner";
+import { useToast } from "@/hooks/use-toast";
+import SectionHeader from "../shared/SectionHeader";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
 	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -48,6 +50,8 @@ const FormSchema = z.object({
 });
 
 export function ContactForm() {
+	const { toast } = useToast();
+	const router = useRouter();
 	const [value, setValue] = useState<string | undefined>(undefined);
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
@@ -62,22 +66,32 @@ export function ContactForm() {
 
 	async function onSubmit(data: z.infer<typeof FormSchema>) {
 		try {
-			const user = {
+			const contact = {
 				name: data.name,
 				email: data.email,
 				phoneNumber: value,
 				subject: data.subject,
 				message: data.message,
 			};
-			await contactUs(user);
-			toast("Thank You for Reaching Out!", {
-				description:
-					"We've received your message and our team will get back to you as soon as possible.",
+			const res = await contactUs(contact);
+
+			if (res?.status == 400)
+				return toast({
+					title: "Error!",
+					description: res?.message,
+					variant: "destructive",
+				});
+
+			toast({
+				title: "Success!",
+				description: res?.message,
 			});
+			router.push(`/success-contact?id=${res?.contact?._id}`);
 		} catch (error) {
-			toast("Error!", {
-				description:
-					"An error occurred and we couldn't get your details. Try reaching out to us through other means",
+			toast({
+				title: "Error!",
+				description: "An error occurred!",
+				variant: "destructive",
 			});
 		}
 	}
@@ -85,11 +99,7 @@ export function ContactForm() {
 	return (
 		<div className="bg-white py-16 relative overflow-hidden">
 			<div className="container">
-				<h2
-					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose md:leading-loose lg:leading-normal  font-semibold mb-2 text-center text-primary`}
-				>
-					Send us a message
-				</h2>
+				<SectionHeader title={"Send us a message"} position="center" />
 
 				<Form {...form}>
 					<form

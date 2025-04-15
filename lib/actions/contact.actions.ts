@@ -1,93 +1,107 @@
 "use server";
 
 import { connectToDatabase } from "../database";
+import { handleError } from "../utils";
+
 import Mailjet from "node-mailjet";
 import Contact from "../database/models/contact.model";
+import {
+	generateAdminContactEmail,
+	generateUserContactEmail,
+} from "@/templates";
 
 const mailjet = Mailjet.apiConnect(
 	process.env.MAILJET_API_PUBLIC_KEY!,
 	process.env.MAILJET_API_PRIVATE_KEY!
 );
 
-export const contactUs = async (user: {
-	name: string;
-	email: string;
-	phoneNumber?: string;
-	subject: string;
-	message?: string;
-}) => {
+export const contactUs = async (user: ContactParams) => {
 	try {
 		await connectToDatabase();
 
-		const newContact = await Contact.create(user);
+		if (!user.name || !user.email || !user.subject)
+			return {
+				status: 400,
+				message: "Oops! Your name, email & subject is required.",
+			};
 
-		if (newContact) {
-			const request = mailjet.post("send", { version: "v3.1" }).request({
-				Messages: [
-					{
-						From: {
-							Email: `${process.env.SENDER_EMAIL_ADDRESS}`,
-							Name: `${process.env.COMPANY_NAME}`,
-						},
-						To: [
-							{
-								Email: `${newContact.ADMIN_EMAIL_ADDRESS}`,
-								Name: `${process.env.COMPANY_NAME}`,
-							},
-						],
-						Subject: `Welcome to ${newContact.subject}`,
-						TextPart: `📩 New Contact Form Submission – Northampton Healthcare Facility`,
-						HTMLPart: `<div
-										style="
-											font-family: Montserrat, sans-serif;
-											font-size: 15px;
-											padding: 2rem;
-										"
-									>
-										<h2>Dear Admin, </h2>
+		const contact = await Contact.create(user);
 
-										<h1>📝 Contact Form Submission Details:</h1>
-                                        <ul>
-		                                <li>
-		                                    <strong>Name:</strong> ${newContact.name}
-		                                </li>
-		                                <li>
-		                                    <strong>Email:</strong> ${newContact.email}
-		                                </li>
-		                                <li>
-		                                    <strong>Phone number:</strong> ${newContact.phoneNumber}
-		                                </li>
-		                                <li>
-		                                    <strong>Subject:</strong> ${newContact.subject}
-		                                </li>
-		                                <li>
-		                                    <strong>Message:</strong> ${newContact.message}
-		                                </li>
-		                            </ul>
-                                    <strong>🚀 Next Steps:</strong>
+		if (!contact)
+			return {
+				status: 400,
+				message: "Oops! Contact is not found.",
+			};
 
-										<p>Please review the inquiry and respond to the user as soon as possible. If urgent, you may want to follow up via phone or WhatsApp for quicker assistance.</p>
-
-
-										<p>If you have any questions or need further assistance, feel free to reach out.</p>
-
-										<p>Best regards,</p>
-										<p>${process.env.COMPANY_NAME} Team</p>
-										<a href='${process.env.WEBSITE_URL}'>Northampton Healthcare Facility</a>
-									</div>
-							`,
+		// **Send Confirmation Email to Student**
+		await mailjet.post("send", { version: "v3.1" }).request({
+			Messages: [
+				{
+					From: {
+						Email: process.env.SENDER_EMAIL_ADDRESS!,
+						Name: process.env.COMPANY_NAME!,
 					},
-				],
-			});
+					To: [
+						{
+							Email: contact.email,
+							Name: contact.name,
+						},
+					],
+					Subject: `We Received Your Message – Northampton Healthcare Facility`,
+					TextPart: `We Received Your Message – Northampton Healthcare Facility`,
+					HTMLPart: generateUserContactEmail(contact),
+				},
+			],
+		});
 
-			// Send email
-			request
-				.then(() => console.log("User sent"))
-				.catch((err: any) => {
-					return err;
-				});
-		}
+		// **Send Email to Admin**
+		await mailjet.post("send", { version: "v3.1" }).request({
+			Messages: [
+				{
+					From: {
+						Email: process.env.SENDER_EMAIL_ADDRESS!,
+						Name: process.env.COMPANY_NAME!,
+					},
+					To: [
+						{
+							Email: process.env.ADMIN_EMAIL_ADDRESS!, // Admin Email
+							Name: "Northampton Healthcare Team",
+						},
+					],
+					Subject: ` New Contact Form Submission – Northampton Healthcare Facility`,
+					TextPart: ` New Contact Form Submission – Northampton Healthcare Facility`,
+					HTMLPart: generateAdminContactEmail(contact),
+				},
+			],
+		});
+
+		return {
+			status: 200,
+			contact: JSON.parse(JSON.stringify(contact)),
+		};
+	} catch (error) {
+		handleError(error);
+	}
+};
+
+export const getContactDetails = async (id: any) => {
+	try {
+		await connectToDatabase();
+
+		const contact = await Contact.findById(id);
+
+		if (!contact)
+			return {
+				status: 400,
+				message: "Contact details not successful. Try again later.",
+			};
+
+		return JSON.parse(JSON.stringify(contact));
 	} catch (error: any) {
-		console.error(error);
+		return {
+			status: error?.status || 400,
+			message:
+				error?.message || "Oops! Contact not found! Try again later.",
+		};
 	}
 };

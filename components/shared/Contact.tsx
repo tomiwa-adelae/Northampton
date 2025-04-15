@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import SectionHeader from "./SectionHeader";
 
 const Contact = ({
 	title,
@@ -13,18 +14,16 @@ const Contact = ({
 	cta?: any;
 }) => {
 	return (
-		<div className="bg-gradient-to-r from-blue-100 to-sky-100 pt-8">
+		<div className="bg-gradient-to-r from-blue-100 to-sky-100 pt-16 md:pt-8">
 			<div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
 				<div className="flex items-start flex-col justify-center">
-					<h2
-						className={`uppercase text-primary text-2xl md:text-3xl font-semibold mb-2`}
-					>
-						{title}
-					</h2>
-					<p className="text-base text-muted-foreground mb-6">
-						{description}
-					</p>
-					<div className="flex md:flex-col lg:flex-row items-center justify-start gap-4">
+					<SectionHeader
+						description={description}
+						title={title}
+						position="left"
+						container={false}
+					/>
+					<div className="mt-6 flex md:flex-col lg:flex-row items-center justify-start gap-4">
 						{cta.map(
 							(
 								action: { slug: string; title: string },

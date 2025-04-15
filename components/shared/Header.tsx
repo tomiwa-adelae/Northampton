@@ -78,7 +78,7 @@ const Header = () => {
 					})}
 				</nav>
 				<div className="lg:hidden flex items-center justify-center gap-2 md:gap-4">
-					<Button size={"md"} asChild>
+					<Button variant={"ghost"} size={"md"} asChild>
 						<Link href="/contact">Contact us</Link>
 					</Button>
 					<MobileNavbar />

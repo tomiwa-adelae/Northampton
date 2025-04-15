@@ -1,29 +1,18 @@
 import Image from "next/image";
+import SectionHeader from "./shared/SectionHeader";
 
 const OurVision = () => {
 	return (
 		<div className="container pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 			<div className="lg:col-span-3 flex items-start justify-center flex-col">
-				<h2
-					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
-				>
-					Our Vision
-				</h2>
-				<p className="text-base">
-					{/* At Northampton Healthcare Facility, our vision is to become
-					the leading force in healthcare delivery across Africa,
-					ensuring that quality medical services are accessible,
-					affordable, and patient-centered. We aim to revolutionize
-					healthcare by leveraging innovation, strategic partnerships,
-					and a commitment to excellence. Our goal is to bridge
-					healthcare gaps, empower medical professionals, and create
-					sustainable solutions that enhance the well-being of
-					individuals, families, and businesses. Through continuous
-					growth and advancement, we strive to set new standards in
-					healthcare accessibility and efficiency. */}
-					To be the provider of choice for healthcare delivery in
-					Africa.
-				</p>
+				<SectionHeader
+					description={
+						"To be the provider of choice for healthcare delivery in Africa."
+					}
+					title={"Our Vision"}
+					position={"left"}
+					container={false}
+				/>
 			</div>
 			<div className="lg:col-span-2 flex items-center justify-center">
 				<Image

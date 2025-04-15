@@ -18,7 +18,7 @@ const page = () => {
 	return (
 		<div>
 			<Showcase
-				headline="Our Services – Quality Healthcare, Made Affordable"
+				headline="Our Services"
 				description="At Northampton Healthcare Facility, we provide expert medical staffing, pharmaceutical supply, home healthcare, and corporate healthcare solutions. Our goal is to bridge healthcare gaps, making high-quality services accessible to all."
 				bgImage="/assets/images/contact-showcase-bg-img.jpg"
 				cta={[

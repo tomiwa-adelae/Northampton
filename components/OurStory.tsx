@@ -1,24 +1,18 @@
 import Image from "next/image";
+import SectionHeader from "./shared/SectionHeader";
 
 const OurStory = () => {
 	return (
 		<div className="container pt-10 md:pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-			{/* <Spotlight /> */}
 			<div className="lg:col-span-3 flex items-start justify-center flex-col">
-				<h2
-					className={`uppercase text-2xl md:text-3xl text-primary font-semibold mt-4 mb-2`}
-				>
-					Our Story
-				</h2>
-				<p className="text-base">
-					For years, accessing affordable healthcare has been a
-					challenge. Northampton Healthcare Facility was established
-					to change that. We believe that no one should struggle to
-					find quality medical professionals or medications. That’s
-					why we provide seamless, cost-effective healthcare solutions
-					tailored to individuals, businesses, and medical
-					institutions.
-				</p>
+				<SectionHeader
+					description={
+						"For years, accessing affordable healthcare has been a challenge. Northampton Healthcare Facility was established to change that. We believe that no one should struggle to find quality medical professionals or medications. That’s why we provide seamless, cost-effective healthcare solutions tailored to individuals, businesses, and medical institutions."
+					}
+					title={"Our Story"}
+					position={"left"}
+					container={false}
+				/>
 			</div>
 			<div className="lg:col-span-2 flex items-center justify-center">
 				<Image
