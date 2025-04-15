@@ -36,79 +36,6 @@ export const navLinks = [
 	},
 ];
 
-export const homeCarousel = [
-	{
-		headline: "Bringing Healthcare Closer",
-		description:
-			"We provide licensed doctors, nurses, and pharmaceuticals at lower costs, helping hospitals, clinics, and individuals access quality healthcare without expensive retainership fees.",
-		cta: [
-			{
-				title: "Explore our services",
-				slug: "/services",
-			},
-			{
-				title: "Call us now",
-				slug: `https://wa.me/${whatsappNumber}`,
-			},
-		],
-		image: "/assets/images/nurse.png",
-	},
-	{
-		headline: "Your Reliable Partner for Medications",
-		description:
-			"With our nationwide pharmacy network, you can access high-quality, affordable medications delivered to your home or hospital.",
-		cta: [
-			{
-				title: "Read more",
-				slug: "/about",
-			},
-		],
-		image: "/assets/images/nurse-three.png",
-	},
-	{
-		headline: "Bringing Quality Healthcare to Your Doorstep",
-		description:
-			"From expert medical staffing to seamless pharmacy deliveries—NHFHL ensures you receive top-tier healthcare without the hassle.",
-		cta: [
-			{
-				title: "Explore our Services",
-				slug: "/services",
-			},
-		],
-		image: "/assets/images/nurse-two.png",
-	},
-	{
-		headline: "Healthcare Solutions for Businesses & HMOs",
-		description:
-			"Reduce costs and improve healthcare access for your employees or enrollees with NHFHL’s seamless corporate and HMO partnerships.",
-		cta: [
-			{
-				title: "Contact us now",
-				slug: "/contact",
-			},
-		],
-		image: "/assets/images/nurse-five.png",
-	},
-	{
-		headline: "Expert Medical Staffing, On Demand",
-		description:
-			"NHFHL provides qualified doctors, nurses, and caregivers for hospitals, clinics, and individuals—whenever you need them.",
-		image: "/assets/images/nurse-three.png",
-	},
-	{
-		headline: "We Make Healthcare Easy & Stress-Free",
-		description:
-			"Whether you need a prescription refill, medical staff, or corporate healthcare solutions—NHFHL is your trusted partner for accessible healthcare.",
-		cta: [
-			{
-				title: "Get started today",
-				slug: "/contact",
-			},
-		],
-		image: "/assets/images/nurse-four.png",
-	},
-];
-
 export const whoWeAre = [
 	{
 		icon: "/assets/icons/hospital.svg",
@@ -143,31 +70,31 @@ export const whoWeAre = [
 export const ourServices = [
 	{
 		image: "/assets/images/services-one.jpg",
-		title: "Medical Staffing 👨‍⚕️",
+		title: "Medical Staffing",
 		description:
 			"Get access to licensed doctors and nurses for hospitals, clinics, and private care.",
 	},
 	{
 		image: "/assets/images/services-two.jpg",
-		title: "Pharmaceutical Supply 💊",
+		title: "Pharmaceutical Supply",
 		description:
 			"Affordable, high-quality medications and medical supplies delivered efficiently.",
 	},
 	{
 		image: "/assets/images/services-three.jpg",
-		title: "Home Healthcare Services 🏠",
+		title: "Home Healthcare Services",
 		description:
 			"Professional nurses & caregivers for home treatment and elderly care.",
 	},
 	{
 		image: "/assets/images/services-four.jpg",
-		title: "Corporate Healthcare Partnerships 🏥",
+		title: "Corporate Healthcare Partnerships",
 		description:
 			"Reduce costs & improve healthcare with our outsourcing solutions for businesses and hospitals.",
 	},
 	{
 		image: "/assets/images/services-five.png",
-		title: "Healthcare Referrals & HMO Support 📋",
+		title: "Healthcare Referrals & HMO Support",
 		description:
 			"We connect patients with diagnostic centers and HMOs for specialized care.",
 	},

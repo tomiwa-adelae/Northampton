@@ -8,7 +8,7 @@ import { Spotlight } from "./ui/spotlight-new";
 
 const WhoWeAre = () => {
 	return (
-		<div className="bg-gradient-to-r from-blue-100 to-sky-100 py-16 relative overflow-hidden">
+		<div className="bg-primary py-16 relative overflow-hidden">
 			<SectionHeader
 				description={
 					" Northampton Healthcare Facility Handlers Limited (NHFHL) is a leading healthcare provider dedicated to ensuring easy access to medical professionals, pharmaceutical supplies, and healthcare referrals. We simplify healthcare by connecting individuals, families, and businesses with trusted medical solutions without the need for expensive hospital retainerships."
@@ -16,12 +16,13 @@ const WhoWeAre = () => {
 				title={"Your trusted healthcare partner"}
 				subTitle={"Who we are"}
 				position={"left"}
+				color="white"
 			/>
 			<div className="grid grid-col-1 md:grid-cols-2 container mt-8 gap-4">
 				{whoWeAre.map(({ title, icon, name, description }, index) => (
 					<div
 						key={index}
-						className="bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-8 rounded-2xl"
+						className="bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] p-8 rounded-2xl"
 					>
 						<div className="flex items-center justify-start gap-4">
 							<Image
@@ -42,7 +43,7 @@ const WhoWeAre = () => {
 				))}
 			</div>
 			<div className="flex items-center justify-center container mt-8">
-				<Button size={"lg"} asChild>
+				<Button variant={"white"} size={"lg"} asChild>
 					<Link href="/about">Learn more about us</Link>
 				</Button>
 			</div>

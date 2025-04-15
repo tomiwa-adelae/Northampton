@@ -22,7 +22,7 @@ const OurServices = () => {
 				{ourServices.map(({ title, description, image }, index) => (
 					<div
 						key={index}
-						className="bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl text-center overflow-hidden group"
+						className="bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-2xl text-center overflow-hidden group"
 					>
 						<Image
 							src={image}
@@ -47,10 +47,6 @@ const OurServices = () => {
 					<Link href="/services">Explore our services</Link>
 				</Button>
 			</div>
-			<span className="relative flex size-3">
-				<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
-				<span className="relative inline-flex size-3 rounded-full bg-sky-500"></span>
-			</span>
 		</div>
 	);
 };

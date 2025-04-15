@@ -27,15 +27,12 @@ import {
 } from "../ui/select";
 import { subjects } from "@/constants";
 import { useState } from "react";
-import { Spotlight } from "../ui/spotlight-new";
 import { contactUs } from "@/lib/actions/contact.actions";
 
 import { toast } from "sonner";
 
 const FormSchema = z.object({
-	name: z
-		.string()
-		.min(2, { message: "Name must be at least 2 characters." }),
+	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
 	email: z
 		.string({ required_error: "Email is required." })
 		.email("Invalid email address."),
@@ -87,7 +84,6 @@ export function ContactForm() {
 
 	return (
 		<div className="bg-white py-16 relative overflow-hidden">
-			<Spotlight />
 			<div className="container">
 				<h2
 					className={`uppercase text-xl md:text-2xl lg:text-3xl leading-loose md:leading-loose lg:leading-normal  font-semibold mb-2 text-center text-primary`}
@@ -100,39 +96,41 @@ export function ContactForm() {
 						onSubmit={form.handleSubmit(onSubmit)}
 						className="space-y-6"
 					>
-						<FormField
-							control={form.control}
-							name="name"
-							render={({ field }) => (
-								<FormItem>
-									<FormLabel>Name</FormLabel>
-									<FormControl>
-										<Input
-											placeholder="Enter your name"
-											{...field}
-										/>
-									</FormControl>
-									<FormMessage />
-								</FormItem>
-							)}
-						/>
-						<FormField
-							control={form.control}
-							name="email"
-							render={({ field }) => (
-								<FormItem>
-									<FormLabel>Email</FormLabel>
-									<FormControl>
-										<Input
-											type={"email"}
-											placeholder="Enter your email"
-											{...field}
-										/>
-									</FormControl>
-									<FormMessage />
-								</FormItem>
-							)}
-						/>
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
+							<FormField
+								control={form.control}
+								name="name"
+								render={({ field }) => (
+									<FormItem>
+										<FormLabel>Name</FormLabel>
+										<FormControl>
+											<Input
+												placeholder="Enter your name"
+												{...field}
+											/>
+										</FormControl>
+										<FormMessage />
+									</FormItem>
+								)}
+							/>
+							<FormField
+								control={form.control}
+								name="email"
+								render={({ field }) => (
+									<FormItem>
+										<FormLabel>Email</FormLabel>
+										<FormControl>
+											<Input
+												type={"email"}
+												placeholder="Enter your email"
+												{...field}
+											/>
+										</FormControl>
+										<FormMessage />
+									</FormItem>
+								)}
+							/>
+						</div>
 						<FormField
 							control={form.control}
 							name="phone"

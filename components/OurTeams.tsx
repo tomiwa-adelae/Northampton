@@ -20,7 +20,7 @@ const OurTeams = () => {
 								alt={`${name} image`}
 								width={1000}
 								height={1000}
-								className={`shadow-[0_3px_10px_rgb(0,0,0,0.2)] sticky top-10 left-0 rounded-full object-cover w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-8 border-white ${
+								className={`shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] sticky top-10 left-0 rounded-full object-cover w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-8 border-white ${
 									index + 1 === 2
 										? "md:order-2"
 										: index + 1 === 4

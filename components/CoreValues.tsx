@@ -1,4 +1,5 @@
 import { coreValues } from "@/constants";
+import { Check } from "lucide-react";
 import Image from "next/image";
 
 const CoreValues = () => {
@@ -25,13 +26,14 @@ const CoreValues = () => {
 							key={index}
 							className="text-base flex items-center justify-start gap-4"
 						>
-							<Image
+							{/* <Image
 								src={icon}
 								alt={name}
 								width={1000}
 								height={1000}
 								className="w-6 h-6"
-							/>
+							/> */}
+							<Check className="text-primary w-5 h-5" />
 							<h4>{details}</h4>
 						</div>
 					))}

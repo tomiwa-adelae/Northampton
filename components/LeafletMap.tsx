@@ -14,7 +14,8 @@ const defaultIcon = new L.Icon({
 	iconAnchor: [12, 41],
 });
 
-const position: [number, number] = [51.505, -0.09]; // Lagos, Nigeria coordinates
+// Coordinates for 51B Agboola Ajumobi Crescent, Magodo Phase 2, Lagos
+const position: [number, number] = [6.6219, 3.3769];
 
 export default function LeafletMap() {
 	return (
@@ -28,7 +29,9 @@ export default function LeafletMap() {
 
 			{/* Marker at London Eye */}
 			<Marker position={position} icon={defaultIcon}>
-				<Popup>London Eye</Popup>
+				<Popup>
+					51B Agboola Ajumobi Crescent, Magodo Phase 2, Lagos
+				</Popup>
 			</Marker>
 		</MapContainer>
 	);

@@ -1,5 +1,6 @@
 import Contact from "@/components/shared/Contact";
 import FAQs from "@/components/shared/FAQs";
+import HaveEnquiry from "@/components/shared/HaveEnquiry";
 import Showcase from "@/components/shared/Showcase";
 import WhatWeOffer from "@/components/WhatWeOffer";
 import { whatsappNumber } from "@/constants";
@@ -29,6 +30,7 @@ const page = () => {
 				]}
 			/>
 			<WhatWeOffer />
+			{/* <HaveEnquiry /> */}
 			<FAQs />
 			<Contact
 				title={"Let's connect"}

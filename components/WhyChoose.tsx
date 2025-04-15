@@ -13,7 +13,7 @@ const WhyChoose = () => {
 					alt={"A group a doctors and nurses"}
 					width={1000}
 					height={1000}
-					className="aspect-video object-cover rounded-lg"
+					className="aspect-video object-cover rounded-2xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
 				/>
 				<div className="flex flex-col items-center justify-center">
 					<SectionHeader
@@ -30,7 +30,7 @@ const WhyChoose = () => {
 				{whyChoose.map(({ icon, name, title }, index) => (
 					<div
 						key={index}
-						className="bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex items-center justify-start gap-4 rounded-2xl p-8"
+						className="bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center justify-start gap-4 rounded-2xl p-8"
 					>
 						<Image
 							src={icon}
