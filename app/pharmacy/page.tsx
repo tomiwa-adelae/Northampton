@@ -7,7 +7,7 @@ import WhyTrust from "@/components/WhyTrust";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Northampton Pharmacy | Affordable Medications & Nationwide Delivery",
+	title: "Northampton Healthcare Pharmacy",
 	description:
 		"Order affordable, high-quality medications from NHFHL Pharmacy. We offer doorstep delivery, prescription fulfillment, and corporate medical supply solutions across Nigeria.",
 	keywords:

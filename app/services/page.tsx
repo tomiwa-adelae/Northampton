@@ -7,7 +7,7 @@ import { whatsappNumber } from "@/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Comprehensive Healthcare Services | NHFHL Medical & Pharmacy Solutions",
+	title: "Comprehensive Healthcare Services | NHFHL Medical",
 	description:
 		"Explore NHFHL’s comprehensive healthcare services, including medical staffing, pharmaceutical supply, home healthcare, corporate partnerships, and HMO support.",
 	keywords:

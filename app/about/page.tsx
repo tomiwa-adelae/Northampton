@@ -8,7 +8,7 @@ import { Spotlight } from "@/components/ui/spotlight-new";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "About Northampton | Our Mission, Vision & Leadership in Healthcare",
+	title: "About Northampton",
 	description:
 		"Learn about Northampton Healthcare Facility—our mission, vision, and commitment to delivering cost-effective, high-quality healthcare solutions across Nigeria.",
 	keywords:

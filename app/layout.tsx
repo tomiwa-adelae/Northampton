@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Northampton Healthcare Facility | Affordable Medical & Pharmacy Services",
+	title: "Northampton Healthcare Facility | Affordable Medical Care",
 	description:
 		"NHFHL provides affordable healthcare solutions, including medical staffing, pharmaceutical supply, and HMO support. Get expert care, quality medications, and seamless health solutions today!",
 	keywords:

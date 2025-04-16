@@ -12,7 +12,7 @@ const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Contact Northampton | Get in Touch for Healthcare & Pharmacy Solutions",
+	title: "Contact Northampton | Get in Touch",
 	description:
 		"Need help? Contact Northampton Healthcare Facility for medical staffing, pharmacy orders, corporate healthcare, and HMO support. Call, email, or visit us today!",
 	keywords:
