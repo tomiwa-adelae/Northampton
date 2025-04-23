@@ -1,5 +1,5 @@
 "use client";
-import { email, enquiriesImages, whatsappNumber } from "@/constants";
+import { email, enquiriesImages, whatsappNumber, callNumber } from "@/constants";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Spotlight } from "../ui/spotlight-new";
@@ -30,7 +30,7 @@ const HaveEnquiry = () => {
 						variant={"secondary"}
 						asChild
 					>
-						<a href={`tel:${whatsappNumber}`}>Call us now</a>
+						<a href={`tel:${callNumber}`}>Call us now</a>
 					</Button>
 				</div>
 				<div>
